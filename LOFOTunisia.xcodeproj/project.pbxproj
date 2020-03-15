@@ -9,13 +9,40 @@
 /* Begin PBXBuildFile section */
 		A94A1204241E891A006C9F4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1203241E891A006C9F4B /* AppDelegate.swift */; };
 		A94A1206241E891A006C9F4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1205241E891A006C9F4B /* SceneDelegate.swift */; };
-		A94A1208241E891A006C9F4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1207241E891A006C9F4B /* ViewController.swift */; };
-		A94A120B241E891A006C9F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94A1209241E891A006C9F4B /* Main.storyboard */; };
 		A94A120E241E891A006C9F4B /* LOFOTunisia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A94A120C241E891A006C9F4B /* LOFOTunisia.xcdatamodeld */; };
 		A94A1210241E891E006C9F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94A120F241E891E006C9F4B /* Assets.xcassets */; };
 		A94A1213241E891E006C9F4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94A1211241E891E006C9F4B /* LaunchScreen.storyboard */; };
 		A94A121E241E891E006C9F4B /* LOFOTunisiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A121D241E891E006C9F4B /* LOFOTunisiaTests.swift */; };
 		A94A1229241E891E006C9F4B /* LOFOTunisiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1228241E891E006C9F4B /* LOFOTunisiaUITests.swift */; };
+		A94A124D241E8E15006C9F4B /* Poppins-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A123B241E8E14006C9F4B /* Poppins-Thin.otf */; };
+		A94A124E241E8E15006C9F4B /* Poppins-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A123C241E8E14006C9F4B /* Poppins-ExtraBold.otf */; };
+		A94A124F241E8E15006C9F4B /* Poppins-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A123D241E8E14006C9F4B /* Poppins-Light.otf */; };
+		A94A1250241E8E15006C9F4B /* Poppins-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A123E241E8E15006C9F4B /* Poppins-Bold.otf */; };
+		A94A1251241E8E15006C9F4B /* Poppins-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A123F241E8E15006C9F4B /* Poppins-Black.otf */; };
+		A94A1252241E8E15006C9F4B /* Poppins-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A1240241E8E15006C9F4B /* Poppins-MediumItalic.otf */; };
+		A94A1253241E8E15006C9F4B /* Poppins-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A1241241E8E15006C9F4B /* Poppins-Italic.otf */; };
+		A94A1254241E8E15006C9F4B /* Poppins-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A1242241E8E15006C9F4B /* Poppins-LightItalic.otf */; };
+		A94A1255241E8E15006C9F4B /* Poppins-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A1243241E8E15006C9F4B /* Poppins-Medium.otf */; };
+		A94A1256241E8E15006C9F4B /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A1244241E8E15006C9F4B /* Poppins-Regular.otf */; };
+		A94A1257241E8E15006C9F4B /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A1245241E8E15006C9F4B /* Poppins-SemiBold.otf */; };
+		A94A1258241E8E15006C9F4B /* Poppins-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A1246241E8E15006C9F4B /* Poppins-BoldItalic.otf */; };
+		A94A1259241E8E15006C9F4B /* Poppins-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A1247241E8E15006C9F4B /* Poppins-BlackItalic.otf */; };
+		A94A125A241E8E15006C9F4B /* Poppins-ExtraLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A1248241E8E15006C9F4B /* Poppins-ExtraLightItalic.otf */; };
+		A94A125B241E8E15006C9F4B /* Poppins-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A1249241E8E15006C9F4B /* Poppins-SemiBoldItalic.otf */; };
+		A94A125C241E8E15006C9F4B /* Poppins-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A124A241E8E15006C9F4B /* Poppins-ExtraBoldItalic.otf */; };
+		A94A125D241E8E15006C9F4B /* Poppins-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A124B241E8E15006C9F4B /* Poppins-ThinItalic.otf */; };
+		A94A125E241E8E15006C9F4B /* Poppins-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A94A124C241E8E15006C9F4B /* Poppins-ExtraLight.otf */; };
+		A94A1267241E8EE7006C9F4B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1266241E8EE7006C9F4B /* Constants.swift */; };
+		A94A126A241E8EF0006C9F4B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1268241E8EEF006C9F4B /* UIColorExtension.swift */; };
+		A94A126B241E8EF0006C9F4B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1269241E8EEF006C9F4B /* UIViewControllerExtension.swift */; };
+		A94A126F241E9DAC006C9F4B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A126C241E9DAC006C9F4B /* CustomButton.swift */; };
+		A94A1270241E9DAC006C9F4B /* LOFOTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A126D241E9DAC006C9F4B /* LOFOTabBar.swift */; };
+		A94A1271241E9DAC006C9F4B /* EllipseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A126E241E9DAC006C9F4B /* EllipseView.swift */; };
+		A94A127F241EA374006C9F4B /* localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A94A1281241EA374006C9F4B /* localizable.strings */; };
+		A94A128A241EA431006C9F4B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1288241EA431006C9F4B /* SignUpViewController.swift */; };
+		A94A128B241EA431006C9F4B /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94A1289241EA431006C9F4B /* SignUpViewController.xib */; };
+		A94A128E241EA4D9006C9F4B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A128C241EA4D9006C9F4B /* SignInViewController.swift */; };
+		A94A128F241EA4D9006C9F4B /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94A128D241EA4D9006C9F4B /* SignInViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +66,6 @@
 		A94A1200241E891A006C9F4B /* LOFOTunisia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOFOTunisia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94A1203241E891A006C9F4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A94A1205241E891A006C9F4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A94A1207241E891A006C9F4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A94A120A241E891A006C9F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A94A120D241E891A006C9F4B /* LOFOTunisia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LOFOTunisia.xcdatamodel; sourceTree = "<group>"; };
 		A94A120F241E891E006C9F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A94A1212241E891E006C9F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +76,37 @@
 		A94A1224241E891E006C9F4B /* LOFOTunisiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LOFOTunisiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94A1228241E891E006C9F4B /* LOFOTunisiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOFOTunisiaUITests.swift; sourceTree = "<group>"; };
 		A94A122A241E891E006C9F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94A123B241E8E14006C9F4B /* Poppins-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.otf"; sourceTree = "<group>"; };
+		A94A123C241E8E14006C9F4B /* Poppins-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.otf"; sourceTree = "<group>"; };
+		A94A123D241E8E14006C9F4B /* Poppins-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.otf"; sourceTree = "<group>"; };
+		A94A123E241E8E15006C9F4B /* Poppins-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.otf"; sourceTree = "<group>"; };
+		A94A123F241E8E15006C9F4B /* Poppins-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.otf"; sourceTree = "<group>"; };
+		A94A1240241E8E15006C9F4B /* Poppins-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.otf"; sourceTree = "<group>"; };
+		A94A1241241E8E15006C9F4B /* Poppins-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.otf"; sourceTree = "<group>"; };
+		A94A1242241E8E15006C9F4B /* Poppins-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.otf"; sourceTree = "<group>"; };
+		A94A1243241E8E15006C9F4B /* Poppins-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.otf"; sourceTree = "<group>"; };
+		A94A1244241E8E15006C9F4B /* Poppins-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.otf"; sourceTree = "<group>"; };
+		A94A1245241E8E15006C9F4B /* Poppins-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.otf"; sourceTree = "<group>"; };
+		A94A1246241E8E15006C9F4B /* Poppins-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.otf"; sourceTree = "<group>"; };
+		A94A1247241E8E15006C9F4B /* Poppins-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.otf"; sourceTree = "<group>"; };
+		A94A1248241E8E15006C9F4B /* Poppins-ExtraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.otf"; sourceTree = "<group>"; };
+		A94A1249241E8E15006C9F4B /* Poppins-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		A94A124A241E8E15006C9F4B /* Poppins-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		A94A124B241E8E15006C9F4B /* Poppins-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.otf"; sourceTree = "<group>"; };
+		A94A124C241E8E15006C9F4B /* Poppins-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.otf"; sourceTree = "<group>"; };
+		A94A1266241E8EE7006C9F4B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A94A1268241E8EEF006C9F4B /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A94A1269241E8EEF006C9F4B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		A94A126C241E9DAC006C9F4B /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		A94A126D241E9DAC006C9F4B /* LOFOTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LOFOTabBar.swift; sourceTree = "<group>"; };
+		A94A126E241E9DAC006C9F4B /* EllipseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipseView.swift; sourceTree = "<group>"; };
+		A94A1280241EA374006C9F4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/localizable.strings; sourceTree = "<group>"; };
+		A94A1282241EA384006C9F4B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A94A1283241EA384006C9F4B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/localizable.strings; sourceTree = "<group>"; };
+		A94A1288241EA431006C9F4B /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A94A1289241EA431006C9F4B /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		A94A128C241EA4D9006C9F4B /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		A94A128D241EA4D9006C9F4B /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +157,9 @@
 		A94A1202241E891A006C9F4B /* LOFOTunisia */ = {
 			isa = PBXGroup;
 			children = (
-				A94A1203241E891A006C9F4B /* AppDelegate.swift */,
-				A94A1205241E891A006C9F4B /* SceneDelegate.swift */,
-				A94A1207241E891A006C9F4B /* ViewController.swift */,
-				A94A1209241E891A006C9F4B /* Main.storyboard */,
-				A94A120F241E891E006C9F4B /* Assets.xcassets */,
+				A94A1272241E9E7A006C9F4B /* Modules */,
+				A94A1236241E8D72006C9F4B /* Configurations */,
 				A94A1211241E891E006C9F4B /* LaunchScreen.storyboard */,
-				A94A1214241E891E006C9F4B /* Info.plist */,
-				A94A120C241E891A006C9F4B /* LOFOTunisia.xcdatamodeld */,
 			);
 			path = LOFOTunisia;
 			sourceTree = "<group>";
@@ -129,6 +180,246 @@
 				A94A122A241E891E006C9F4B /* Info.plist */,
 			);
 			path = LOFOTunisiaUITests;
+			sourceTree = "<group>";
+		};
+		A94A1236241E8D72006C9F4B /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				A94A1214241E891E006C9F4B /* Info.plist */,
+				A94A1237241E8D8F006C9F4B /* Commons Files */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		A94A1237241E8D8F006C9F4B /* Commons Files */ = {
+			isa = PBXGroup;
+			children = (
+				A94A1265241E8E89006C9F4B /* DataBase */,
+				A94A1264241E8E66006C9F4B /* Localizations */,
+				A94A1263241E8E53006C9F4B /* Colors */,
+				A94A125F241E8E24006C9F4B /* Helpers */,
+				A94A123A241E8DF2006C9F4B /* Fonts */,
+				A94A1239241E8DE1006C9F4B /* Media */,
+				A94A1238241E8D9E006C9F4B /* UIApplication */,
+			);
+			path = "Commons Files";
+			sourceTree = "<group>";
+		};
+		A94A1238241E8D9E006C9F4B /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				A94A1203241E891A006C9F4B /* AppDelegate.swift */,
+				A94A1205241E891A006C9F4B /* SceneDelegate.swift */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		A94A1239241E8DE1006C9F4B /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				A94A120F241E891E006C9F4B /* Assets.xcassets */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		A94A123A241E8DF2006C9F4B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A94A123F241E8E15006C9F4B /* Poppins-Black.otf */,
+				A94A1247241E8E15006C9F4B /* Poppins-BlackItalic.otf */,
+				A94A123E241E8E15006C9F4B /* Poppins-Bold.otf */,
+				A94A1246241E8E15006C9F4B /* Poppins-BoldItalic.otf */,
+				A94A123C241E8E14006C9F4B /* Poppins-ExtraBold.otf */,
+				A94A124A241E8E15006C9F4B /* Poppins-ExtraBoldItalic.otf */,
+				A94A124C241E8E15006C9F4B /* Poppins-ExtraLight.otf */,
+				A94A1248241E8E15006C9F4B /* Poppins-ExtraLightItalic.otf */,
+				A94A1241241E8E15006C9F4B /* Poppins-Italic.otf */,
+				A94A123D241E8E14006C9F4B /* Poppins-Light.otf */,
+				A94A1242241E8E15006C9F4B /* Poppins-LightItalic.otf */,
+				A94A1243241E8E15006C9F4B /* Poppins-Medium.otf */,
+				A94A1240241E8E15006C9F4B /* Poppins-MediumItalic.otf */,
+				A94A1244241E8E15006C9F4B /* Poppins-Regular.otf */,
+				A94A1245241E8E15006C9F4B /* Poppins-SemiBold.otf */,
+				A94A1249241E8E15006C9F4B /* Poppins-SemiBoldItalic.otf */,
+				A94A123B241E8E14006C9F4B /* Poppins-Thin.otf */,
+				A94A124B241E8E15006C9F4B /* Poppins-ThinItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A94A125F241E8E24006C9F4B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A94A1262241E8E44006C9F4B /* CustomsControls */,
+				A94A1261241E8E35006C9F4B /* Extensions */,
+				A94A1260241E8E2C006C9F4B /* Utilities */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A94A1260241E8E2C006C9F4B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A94A1266241E8EE7006C9F4B /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A94A1261241E8E35006C9F4B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A94A1268241E8EEF006C9F4B /* UIColorExtension.swift */,
+				A94A1269241E8EEF006C9F4B /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A94A1262241E8E44006C9F4B /* CustomsControls */ = {
+			isa = PBXGroup;
+			children = (
+				A94A126C241E9DAC006C9F4B /* CustomButton.swift */,
+				A94A126E241E9DAC006C9F4B /* EllipseView.swift */,
+				A94A126D241E9DAC006C9F4B /* LOFOTabBar.swift */,
+			);
+			path = CustomsControls;
+			sourceTree = "<group>";
+		};
+		A94A1263241E8E53006C9F4B /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		A94A1264241E8E66006C9F4B /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				A94A1281241EA374006C9F4B /* localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		A94A1265241E8E89006C9F4B /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				A94A120C241E891A006C9F4B /* LOFOTunisia.xcdatamodeld */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		A94A1272241E9E7A006C9F4B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A94A1278241E9F22006C9F4B /* Authentification */,
+				A94A1274241E9EC4006C9F4B /* Models */,
+				A94A1273241E9EB2006C9F4B /* DashBoard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A94A1273241E9EB2006C9F4B /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		A94A1274241E9EC4006C9F4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A94A1275241E9ECD006C9F4B /* Intercators */ = {
+			isa = PBXGroup;
+			children = (
+				A94A1277241E9EF2006C9F4B /* Networking */,
+				A94A1276241E9EEB006C9F4B /* Cache */,
+			);
+			path = Intercators;
+			sourceTree = "<group>";
+		};
+		A94A1276241E9EEB006C9F4B /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		A94A1277241E9EF2006C9F4B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A94A1278241E9F22006C9F4B /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				A94A127B241E9F74006C9F4B /* SignUp */,
+				A94A127A241E9F65006C9F4B /* SignIn */,
+				A94A1275241E9ECD006C9F4B /* Intercators */,
+				A94A1279241E9F38006C9F4B /* Protocoles */,
+			);
+			path = Authentification;
+			sourceTree = "<group>";
+		};
+		A94A1279241E9F38006C9F4B /* Protocoles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocoles;
+			sourceTree = "<group>";
+		};
+		A94A127A241E9F65006C9F4B /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				A94A1285241EA3D4006C9F4B /* Presenter */,
+				A94A1284241EA3CA006C9F4B /* Views */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		A94A127B241E9F74006C9F4B /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				A94A1287241EA3F5006C9F4B /* Presenter */,
+				A94A1286241EA3ED006C9F4B /* Views */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		A94A1284241EA3CA006C9F4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A94A128C241EA4D9006C9F4B /* SignInViewController.swift */,
+				A94A128D241EA4D9006C9F4B /* SignInViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A94A1285241EA3D4006C9F4B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A94A1286241EA3ED006C9F4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A94A1288241EA431006C9F4B /* SignUpViewController.swift */,
+				A94A1289241EA431006C9F4B /* SignUpViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A94A1287241EA3F5006C9F4B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +508,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = A94A11F7241E891A006C9F4B;
 			productRefGroup = A94A1201241E891A006C9F4B /* Products */;
@@ -235,9 +527,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94A1250241E8E15006C9F4B /* Poppins-Bold.otf in Resources */,
+				A94A1255241E8E15006C9F4B /* Poppins-Medium.otf in Resources */,
+				A94A1251241E8E15006C9F4B /* Poppins-Black.otf in Resources */,
+				A94A127F241EA374006C9F4B /* localizable.strings in Resources */,
+				A94A125C241E8E15006C9F4B /* Poppins-ExtraBoldItalic.otf in Resources */,
 				A94A1213241E891E006C9F4B /* LaunchScreen.storyboard in Resources */,
+				A94A124F241E8E15006C9F4B /* Poppins-Light.otf in Resources */,
+				A94A1252241E8E15006C9F4B /* Poppins-MediumItalic.otf in Resources */,
+				A94A125B241E8E15006C9F4B /* Poppins-SemiBoldItalic.otf in Resources */,
+				A94A1256241E8E15006C9F4B /* Poppins-Regular.otf in Resources */,
+				A94A1259241E8E15006C9F4B /* Poppins-BlackItalic.otf in Resources */,
+				A94A125D241E8E15006C9F4B /* Poppins-ThinItalic.otf in Resources */,
+				A94A1253241E8E15006C9F4B /* Poppins-Italic.otf in Resources */,
+				A94A1254241E8E15006C9F4B /* Poppins-LightItalic.otf in Resources */,
+				A94A1257241E8E15006C9F4B /* Poppins-SemiBold.otf in Resources */,
+				A94A125A241E8E15006C9F4B /* Poppins-ExtraLightItalic.otf in Resources */,
+				A94A128B241EA431006C9F4B /* SignUpViewController.xib in Resources */,
+				A94A125E241E8E15006C9F4B /* Poppins-ExtraLight.otf in Resources */,
+				A94A128F241EA4D9006C9F4B /* SignInViewController.xib in Resources */,
 				A94A1210241E891E006C9F4B /* Assets.xcassets in Resources */,
-				A94A120B241E891A006C9F4B /* Main.storyboard in Resources */,
+				A94A124D241E8E15006C9F4B /* Poppins-Thin.otf in Resources */,
+				A94A1258241E8E15006C9F4B /* Poppins-BoldItalic.otf in Resources */,
+				A94A124E241E8E15006C9F4B /* Poppins-ExtraBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +574,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A94A1208241E891A006C9F4B /* ViewController.swift in Sources */,
+				A94A128E241EA4D9006C9F4B /* SignInViewController.swift in Sources */,
 				A94A120E241E891A006C9F4B /* LOFOTunisia.xcdatamodeld in Sources */,
 				A94A1204241E891A006C9F4B /* AppDelegate.swift in Sources */,
+				A94A126B241E8EF0006C9F4B /* UIViewControllerExtension.swift in Sources */,
+				A94A126A241E8EF0006C9F4B /* UIColorExtension.swift in Sources */,
+				A94A128A241EA431006C9F4B /* SignUpViewController.swift in Sources */,
+				A94A126F241E9DAC006C9F4B /* CustomButton.swift in Sources */,
 				A94A1206241E891A006C9F4B /* SceneDelegate.swift in Sources */,
+				A94A1271241E9DAC006C9F4B /* EllipseView.swift in Sources */,
+				A94A1267241E8EE7006C9F4B /* Constants.swift in Sources */,
+				A94A1270241E9DAC006C9F4B /* LOFOTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,20 +620,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A94A1209241E891A006C9F4B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A94A120A241E891A006C9F4B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A94A1211241E891E006C9F4B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A94A1212241E891E006C9F4B /* Base */,
+				A94A1282241EA384006C9F4B /* fr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A94A1281241EA374006C9F4B /* localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94A1280241EA374006C9F4B /* en */,
+				A94A1283241EA384006C9F4B /* fr */,
+			);
+			name = localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -324,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -384,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -440,7 +763,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99J6CKC79H;
-				INFOPLIST_FILE = LOFOTunisia/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LOFOTunisia/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,7 +771,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilepowered.LOFOTunisia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,7 +781,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99J6CKC79H;
-				INFOPLIST_FILE = LOFOTunisia/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LOFOTunisia/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +789,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilepowered.LOFOTunisia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
