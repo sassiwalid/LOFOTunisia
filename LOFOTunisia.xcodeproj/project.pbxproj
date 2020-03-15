@@ -43,6 +43,9 @@
 		A94A128B241EA431006C9F4B /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94A1289241EA431006C9F4B /* SignUpViewController.xib */; };
 		A94A128E241EA4D9006C9F4B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A128C241EA4D9006C9F4B /* SignInViewController.swift */; };
 		A94A128F241EA4D9006C9F4B /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94A128D241EA4D9006C9F4B /* SignInViewController.xib */; };
+		A94A1292241EA8AE006C9F4B /* LoginAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1291241EA8AE006C9F4B /* LoginAPIService.swift */; };
+		A94A1294241EA948006C9F4B /* AuthAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1293241EA948006C9F4B /* AuthAPIService.swift */; };
+		A94A1296241EAEAB006C9F4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1295241EAEAB006C9F4B /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,9 @@
 		A94A1289241EA431006C9F4B /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		A94A128C241EA4D9006C9F4B /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A94A128D241EA4D9006C9F4B /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		A94A1291241EA8AE006C9F4B /* LoginAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAPIService.swift; sourceTree = "<group>"; };
+		A94A1293241EA948006C9F4B /* AuthAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthAPIService.swift; sourceTree = "<group>"; };
+		A94A1295241EAEAB006C9F4B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,7 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				A94A1278241E9F22006C9F4B /* Authentification */,
-				A94A1274241E9EC4006C9F4B /* Models */,
+				A94A1274241E9EC4006C9F4B /* Entities */,
 				A94A1273241E9EB2006C9F4B /* DashBoard */,
 			);
 			path = Modules;
@@ -324,18 +330,17 @@
 			path = DashBoard;
 			sourceTree = "<group>";
 		};
-		A94A1274241E9EC4006C9F4B /* Models */ = {
+		A94A1274241E9EC4006C9F4B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				A94A1295241EAEAB006C9F4B /* User.swift */,
 			);
-			path = Models;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		A94A1275241E9ECD006C9F4B /* Intercators */ = {
 			isa = PBXGroup;
 			children = (
-				A94A1277241E9EF2006C9F4B /* Networking */,
-				A94A1276241E9EEB006C9F4B /* Cache */,
 			);
 			path = Intercators;
 			sourceTree = "<group>";
@@ -350,6 +355,7 @@
 		A94A1277241E9EF2006C9F4B /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				A94A1291241EA8AE006C9F4B /* LoginAPIService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -359,7 +365,8 @@
 			children = (
 				A94A127B241E9F74006C9F4B /* SignUp */,
 				A94A127A241E9F65006C9F4B /* SignIn */,
-				A94A1275241E9ECD006C9F4B /* Intercators */,
+				A94A1276241E9EEB006C9F4B /* Cache */,
+				A94A1277241E9EF2006C9F4B /* Networking */,
 				A94A1279241E9F38006C9F4B /* Protocoles */,
 			);
 			path = Authentification;
@@ -368,6 +375,7 @@
 		A94A1279241E9F38006C9F4B /* Protocoles */ = {
 			isa = PBXGroup;
 			children = (
+				A94A1293241EA948006C9F4B /* AuthAPIService.swift */,
 			);
 			path = Protocoles;
 			sourceTree = "<group>";
@@ -375,6 +383,8 @@
 		A94A127A241E9F65006C9F4B /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				A94A1275241E9ECD006C9F4B /* Intercators */,
+				A94A1297241EB067006C9F4B /* Router */,
 				A94A1285241EA3D4006C9F4B /* Presenter */,
 				A94A1284241EA3CA006C9F4B /* Views */,
 			);
@@ -384,6 +394,8 @@
 		A94A127B241E9F74006C9F4B /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				A94A1299241EB0BF006C9F4B /* Interactors */,
+				A94A1298241EB06F006C9F4B /* Router */,
 				A94A1287241EA3F5006C9F4B /* Presenter */,
 				A94A1286241EA3ED006C9F4B /* Views */,
 			);
@@ -420,6 +432,27 @@
 			children = (
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A94A1297241EB067006C9F4B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A94A1298241EB06F006C9F4B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A94A1299241EB0BF006C9F4B /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -574,10 +607,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94A1294241EA948006C9F4B /* AuthAPIService.swift in Sources */,
 				A94A128E241EA4D9006C9F4B /* SignInViewController.swift in Sources */,
 				A94A120E241E891A006C9F4B /* LOFOTunisia.xcdatamodeld in Sources */,
 				A94A1204241E891A006C9F4B /* AppDelegate.swift in Sources */,
 				A94A126B241E8EF0006C9F4B /* UIViewControllerExtension.swift in Sources */,
+				A94A1292241EA8AE006C9F4B /* LoginAPIService.swift in Sources */,
+				A94A1296241EAEAB006C9F4B /* User.swift in Sources */,
 				A94A126A241E8EF0006C9F4B /* UIColorExtension.swift in Sources */,
 				A94A128A241EA431006C9F4B /* SignUpViewController.swift in Sources */,
 				A94A126F241E9DAC006C9F4B /* CustomButton.swift in Sources */,

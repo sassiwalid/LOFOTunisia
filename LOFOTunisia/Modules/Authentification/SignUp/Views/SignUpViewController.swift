@@ -9,18 +9,21 @@
 import UIKit
 class SignUpViewController: UIViewController {
     // MARK: - IBOutlets
-    @IBOutlet weak var signUpButton: CustomButton!
-    @IBOutlet weak var userPhotoLabel: UILabel!
-    @IBOutlet weak var userPhoto: UIImageView!
-    @IBOutlet weak var confPasswordText: UITextField!
-    @IBOutlet weak var passwordText: UITextField!
-    @IBOutlet weak var emailText: UITextField!
-    @IBOutlet weak var cityText: UITextField!
-    @IBOutlet weak var ageText: UITextField!
-    @IBOutlet weak var subNameText: UITextField!
-    @IBOutlet weak var nameText: UITextField!
-    @IBOutlet weak var addPhotoView: EllipseView!
+
+    @IBOutlet var signUpButton: CustomButton!
+    @IBOutlet var userPhotoLabel: UILabel!
+    @IBOutlet var userPhoto: UIImageView!
+    @IBOutlet var confPasswordText: UITextField!
+    @IBOutlet var passwordText: UITextField!
+    @IBOutlet var emailText: UITextField!
+    @IBOutlet var cityText: UITextField!
+    @IBOutlet var ageText: UITextField!
+    @IBOutlet var subNameText: UITextField!
+    @IBOutlet var nameText: UITextField!
+    @IBOutlet var addPhotoView: EllipseView!
+
     // MARK: - Variables
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
