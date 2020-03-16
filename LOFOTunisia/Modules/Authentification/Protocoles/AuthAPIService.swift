@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol AuthAPIService {
+protocol AuthAPIServiceProtocol {
     func getUser(login: String, password: String, onCompletion: @escaping((Bool, User?) -> Void))
     func registerUser(user: User, onCompletion: @escaping((Bool, User?) -> Void))
 }

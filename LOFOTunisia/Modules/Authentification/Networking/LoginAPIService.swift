@@ -9,7 +9,7 @@
 import Foundation
 
 /// LoginAPIService:
-class LoginAPIService: AuthAPIService {
+class LoginAPIService: AuthAPIServiceProtocol {
     var urlSession : URLSession?
     init(urlSession:URLSession) {
         self.urlSession = urlSession

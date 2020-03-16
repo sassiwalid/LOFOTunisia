@@ -46,6 +46,9 @@
 		A94A1292241EA8AE006C9F4B /* LoginAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1291241EA8AE006C9F4B /* LoginAPIService.swift */; };
 		A94A1294241EA948006C9F4B /* AuthAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1293241EA948006C9F4B /* AuthAPIService.swift */; };
 		A94A1296241EAEAB006C9F4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1295241EAEAB006C9F4B /* User.swift */; };
+		A977F99D241FD74A00CDDF19 /* SignInProtocoles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A977F99C241FD74A00CDDF19 /* SignInProtocoles.swift */; };
+		A977F99F241FE53100CDDF19 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A977F99E241FE53100CDDF19 /* SignInPresenter.swift */; };
+		A977F9A1241FE7CD00CDDF19 /* SignInIntercator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A977F9A0241FE7CD00CDDF19 /* SignInIntercator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,9 @@
 		A94A1291241EA8AE006C9F4B /* LoginAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAPIService.swift; sourceTree = "<group>"; };
 		A94A1293241EA948006C9F4B /* AuthAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthAPIService.swift; sourceTree = "<group>"; };
 		A94A1295241EAEAB006C9F4B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A977F99C241FD74A00CDDF19 /* SignInProtocoles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocoles.swift; sourceTree = "<group>"; };
+		A977F99E241FE53100CDDF19 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		A977F9A0241FE7CD00CDDF19 /* SignInIntercator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInIntercator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +347,7 @@
 		A94A1275241E9ECD006C9F4B /* Intercators */ = {
 			isa = PBXGroup;
 			children = (
+				A977F9A0241FE7CD00CDDF19 /* SignInIntercator.swift */,
 			);
 			path = Intercators;
 			sourceTree = "<group>";
@@ -376,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				A94A1293241EA948006C9F4B /* AuthAPIService.swift */,
+				A977F99C241FD74A00CDDF19 /* SignInProtocoles.swift */,
 			);
 			path = Protocoles;
 			sourceTree = "<group>";
@@ -414,6 +422,7 @@
 		A94A1285241EA3D4006C9F4B /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A977F99E241FE53100CDDF19 /* SignInPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -614,9 +623,12 @@
 				A94A126B241E8EF0006C9F4B /* UIViewControllerExtension.swift in Sources */,
 				A94A1292241EA8AE006C9F4B /* LoginAPIService.swift in Sources */,
 				A94A1296241EAEAB006C9F4B /* User.swift in Sources */,
+				A977F99F241FE53100CDDF19 /* SignInPresenter.swift in Sources */,
 				A94A126A241E8EF0006C9F4B /* UIColorExtension.swift in Sources */,
 				A94A128A241EA431006C9F4B /* SignUpViewController.swift in Sources */,
+				A977F9A1241FE7CD00CDDF19 /* SignInIntercator.swift in Sources */,
 				A94A126F241E9DAC006C9F4B /* CustomButton.swift in Sources */,
+				A977F99D241FD74A00CDDF19 /* SignInProtocoles.swift in Sources */,
 				A94A1206241E891A006C9F4B /* SceneDelegate.swift in Sources */,
 				A94A1271241E9DAC006C9F4B /* EllipseView.swift in Sources */,
 				A94A1267241E8EE7006C9F4B /* Constants.swift in Sources */,
