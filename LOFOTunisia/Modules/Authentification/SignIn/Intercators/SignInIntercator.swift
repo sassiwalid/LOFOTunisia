@@ -8,13 +8,20 @@
 
 import Foundation
 
-class SignInInteractor: PresenterToInteractorProtocol {
-    var interactorToPresenter: InteractorToPresenterProtocol?
-    var service: AuthAPIServiceProtocol?
+class SignInInteractor: SignInPresenterToInteractorProtocol {
+    var interactorToPresenter: SignInInteractorToPresenterProtocol?
+    var service: AuthAPIServiceProtocol? = LoginAPIService(urlSession:URLSession.shared)
     
     func checkUser(login: String, password: String) {
         service?.getUser(login: login, password: password, onCompletion: { (success, user) in
-            
+            if success == false {
+                self.interactorToPresenter?.userSignInFailed()
+                return
+            }
+            guard let myUser = user else{
+                return
+            }
+            self.interactorToPresenter?.checkUserSuccess(userData: myUser)
         })
     }
 }

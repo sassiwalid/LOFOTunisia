@@ -9,32 +9,32 @@
 import Foundation
 import UIKit
 
-protocol ViewToPresenterProtocol: class {
-    var view: PresenterToViewProtocol? { get set }
-    var interactor: PresenterToInteractorProtocol? { get set }
-    var router: PresenterToRouterProtocol? { get set }
+protocol SignInViewToPresenterProtocol: class {
+    var view: SignInPresenterToViewProtocol? { get set }
+    var interactor: SignInPresenterToInteractorProtocol? { get set }
+    var router: SignInPresenterToRouterProtocol? { get set }
     func startChekUser(login:String,password:String)
     func showSignUpVC(navigationController: UINavigationController)
     func showDashboardVC(navigationController: UINavigationController)
 }
 
-protocol PresenterToViewProtocol: class {
+protocol SignInPresenterToViewProtocol: class {
     func showError()
     func showUser(userData: User)
 }
 
-protocol PresenterToInteractorProtocol: class {
-    var interactorToPresenter: InteractorToPresenterProtocol? { get set }
+protocol SignInPresenterToInteractorProtocol: class {
+    var interactorToPresenter: SignInInteractorToPresenterProtocol? { get set }
     func checkUser(login:String, password:String)
 }
 
-protocol PresenterToRouterProtocol: class {
+protocol SignInPresenterToRouterProtocol: class {
     func showSignUp(navigation: UINavigationController)
     func showDashboard(navigation: UINavigationController)
     func createSignInModule() -> SignInViewController
 }
 
-protocol InteractorToPresenterProtocol: class {
+protocol SignInInteractorToPresenterProtocol: class {
     func checkUserSuccess(userData: User)
     func userSignInFailed()
 }

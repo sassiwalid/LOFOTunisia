@@ -6,9 +6,15 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.otf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController" customModule="LOFOTunisia" customModuleProvider="target">
             <connections>
+                <outlet property="checkUserActivityIndicator" destination="nJl-I4-Sxs" id="TMK-aQ-rDe"/>
                 <outlet property="emailTextField" destination="E9h-0s-WiD" id="6c5-yp-WhF"/>
                 <outlet property="fbButton" destination="Juw-Lr-MLG" id="VdN-XE-HiZ"/>
                 <outlet property="gmailButton" destination="46V-PA-Ryt" id="bde-cz-zFV"/>
@@ -68,6 +74,9 @@
                                     </fragment>
                                 </attributedString>
                             </state>
+                            <connections>
+                                <action selector="fbButtonClicked:" destination="-1" eventType="touchUpInside" id="kj8-7A-icx"/>
+                            </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="qaO-8H-gKj">
                             <rect key="frame" x="28.333333333333332" y="22" width="38" height="47"/>
@@ -80,6 +89,13 @@
                         <constraint firstAttribute="width" constant="300" id="nGN-uq-lTc"/>
                     </constraints>
                 </view>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="nJl-I4-Sxs">
+                    <rect key="frame" x="182" y="343" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Xyi-5p-USG"/>
+                        <constraint firstAttribute="width" constant="50" id="kPp-k2-sFz"/>
+                    </constraints>
+                </activityIndicatorView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YpB-gt-m7v" userLabel="GmailView">
                     <rect key="frame" x="57" y="394.66666666666669" width="300" height="82"/>
                     <subviews>
@@ -102,6 +118,9 @@
                                     <real key="value" value="1"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="gmailButtonClicked:" destination="-1" eventType="touchUpInside" id="SWy-0u-3LH"/>
+                            </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gmail" translatesAutoresizingMaskIntoConstraints="NO" id="HbV-sD-wGz">
                             <rect key="frame" x="28.333333333333332" y="22" width="36" height="42"/>
@@ -110,22 +129,22 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
-                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-TI-vok">
-                    <rect key="frame" x="74" y="378" width="264" height="21"/>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-TI-vok">
+                    <rect key="frame" x="76.333333333333343" y="491" width="259.66666666666663" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="y6V-On-dKH"/>
                     </constraints>
                     <attributedString key="attributedText">
                         <fragment content="Pas encore inscrit ? ">
                             <attributes>
-                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="NSColor" red="0.0030552630048921183" green="0.035508060735180223" blue="0.0794931789340102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <font key="NSFont" size="16" name="Poppins-SemiBold"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
                         <fragment content="Inscrivez vous !!">
                             <attributes>
-                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="NSColor" red="0.0030552630048921183" green="0.035508060735180223" blue="0.0794931789340102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <font key="NSFont" size="16" name="Poppins-SemiBold"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 <integer key="NSUnderline" value="1"/>
@@ -172,6 +191,9 @@
                             <real key="value" value="25"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="signInButtonClicked:" destination="-1" eventType="touchUpInside" id="9iJ-IH-E2B"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMU-qX-TJX" userLabel="sepView1">
                     <rect key="frame" x="40" y="597.66666666666663" width="334" height="1"/>
@@ -200,20 +222,22 @@
                 <constraint firstItem="TdE-4n-X7M" firstAttribute="trailing" secondItem="Cko-wA-6AO" secondAttribute="trailing" id="MRw-Ri-lTy"/>
                 <constraint firstItem="TdE-4n-X7M" firstAttribute="leading" secondItem="Cko-wA-6AO" secondAttribute="leading" constant="2" id="N7B-AE-aEF"/>
                 <constraint firstItem="E9h-0s-WiD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="NCX-kZ-aHW"/>
-                <constraint firstItem="E9h-0s-WiD" firstAttribute="top" secondItem="mLX-TI-vok" secondAttribute="bottom" constant="43.666666666666686" id="Q7V-u4-Hmk"/>
+                <constraint firstItem="E9h-0s-WiD" firstAttribute="top" secondItem="mLX-TI-vok" secondAttribute="bottom" constant="50.666666666666686" id="Q7V-u4-Hmk"/>
                 <constraint firstItem="XMU-qX-TJX" firstAttribute="trailing" secondItem="E9h-0s-WiD" secondAttribute="trailing" id="RIJ-2K-Chb"/>
                 <constraint firstItem="den-kQ-VVV" firstAttribute="top" secondItem="dG7-lE-kTn" secondAttribute="bottom" constant="-21" id="Sa8-W5-nVU"/>
                 <constraint firstItem="YpB-gt-m7v" firstAttribute="leading" secondItem="dYg-eW-S71" secondAttribute="leading" id="Vqv-kq-7er"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cko-wA-6AO" secondAttribute="trailing" constant="40" id="XwR-QI-ODz"/>
                 <constraint firstItem="YpB-gt-m7v" firstAttribute="trailing" secondItem="dYg-eW-S71" secondAttribute="trailing" id="YK2-ee-v8m"/>
+                <constraint firstItem="nJl-I4-Sxs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aRx-MD-SeY"/>
                 <constraint firstItem="FKg-D2-vxd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bcA-jN-WF6"/>
+                <constraint firstItem="nJl-I4-Sxs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="c0F-1W-cnn"/>
                 <constraint firstItem="XMU-qX-TJX" firstAttribute="leading" secondItem="E9h-0s-WiD" secondAttribute="leading" id="g5s-SR-7jS"/>
                 <constraint firstItem="Cko-wA-6AO" firstAttribute="top" secondItem="E9h-0s-WiD" secondAttribute="bottom" constant="27" id="hnN-6m-wQJ"/>
                 <constraint firstItem="dYg-eW-S71" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jyT-Bu-7uI"/>
                 <constraint firstItem="FKg-D2-vxd" firstAttribute="top" secondItem="Cko-wA-6AO" secondAttribute="bottom" constant="46" id="kvj-qd-mri"/>
                 <constraint firstItem="YpB-gt-m7v" firstAttribute="height" secondItem="dYg-eW-S71" secondAttribute="height" id="m7m-b6-5JZ"/>
                 <constraint firstItem="YpB-gt-m7v" firstAttribute="width" secondItem="dYg-eW-S71" secondAttribute="width" id="n1R-ar-vhj"/>
-                <constraint firstItem="mLX-TI-vok" firstAttribute="top" secondItem="YpB-gt-m7v" secondAttribute="bottom" constant="21.333333333333314" id="o8I-XN-7bV"/>
+                <constraint firstItem="mLX-TI-vok" firstAttribute="top" secondItem="YpB-gt-m7v" secondAttribute="bottom" constant="14.333333333333314" id="o8I-XN-7bV"/>
                 <constraint firstItem="dG7-lE-kTn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="oMX-rN-H8T"/>
                 <constraint firstItem="dYg-eW-S71" firstAttribute="top" secondItem="den-kQ-VVV" secondAttribute="bottom" constant="24.5" id="qO8-mn-IYq"/>
                 <constraint firstItem="Cko-wA-6AO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="yOf-CM-sQb"/>

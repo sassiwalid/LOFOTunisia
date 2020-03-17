@@ -8,12 +8,12 @@
 
 import Foundation
 import UIKit
-class SignInPresenter: ViewToPresenterProtocol {
-    var view: PresenterToViewProtocol?
+class SignInPresenter: SignInViewToPresenterProtocol {
+    var view: SignInPresenterToViewProtocol?
     
-    var interactor: PresenterToInteractorProtocol?
+    var interactor: SignInPresenterToInteractorProtocol?
     
-    var router: PresenterToRouterProtocol?
+    var router: SignInPresenterToRouterProtocol?
     
     func showSignUpVC(navigationController: UINavigationController) {
         router?.showSignUp(navigation: navigationController)
@@ -28,7 +28,7 @@ class SignInPresenter: ViewToPresenterProtocol {
     }
 }
 
-extension SignInPresenter: InteractorToPresenterProtocol {
+extension SignInPresenter: SignInInteractorToPresenterProtocol {
     func checkUserSuccess(userData: User) {
         view?.showUser(userData: userData)
     }

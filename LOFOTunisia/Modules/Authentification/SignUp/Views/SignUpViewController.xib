@@ -307,17 +307,20 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
-                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="t68-Bp-jWz" userLabel="Inscription Label">
-                                    <rect key="frame" x="24" y="55" width="198" height="42"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" distribution="fillProportionally" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="t68-Bp-jWz" userLabel="Inscription Label">
+                                    <rect key="frame" x="0.0" y="55" width="253" height="42"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inscription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNb-gU-sE0">
-                                            <rect key="frame" x="0.0" y="0.0" width="178" height="42"/>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8W-90-gNK" customClass="LOFOBackButton" customModule="LOFOTunisia" customModuleProvider="target">
+                                            <rect key="frame" x="2" y="-1" width="49" height="41"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Inscription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNb-gU-sE0">
+                                            <rect key="frame" x="24.5" y="0.0" width="178" height="42"/>
                                             <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="32"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhp-VN-2mz" customClass="EllipseView" customModule="LOFOTunisia" customModuleProvider="target">
-                                            <rect key="frame" x="180" y="12" width="18" height="18"/>
+                                            <rect key="frame" x="235" y="12" width="18" height="18"/>
                                             <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="18" id="H8w-Z4-K8b"/>
@@ -330,11 +333,6 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="198" id="6ia-X0-5AP"/>
-                                        <constraint firstAttribute="height" constant="42" id="Exo-Om-e7y"/>
-                                        <constraint firstAttribute="width" constant="198" id="TC2-BA-Ddp"/>
-                                    </constraints>
                                 </stackView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -343,12 +341,9 @@
                                 <constraint firstAttribute="bottom" secondItem="Fi3-oy-ITV" secondAttribute="bottom" constant="30" id="9Vq-6S-OIO"/>
                                 <constraint firstAttribute="trailing" secondItem="417-QC-MEc" secondAttribute="trailing" constant="30" id="Dxn-vc-8KW"/>
                                 <constraint firstItem="417-QC-MEc" firstAttribute="leading" secondItem="u6e-mK-8M0" secondAttribute="leading" constant="30" id="Nh0-SC-R4p"/>
-                                <constraint firstItem="t68-Bp-jWz" firstAttribute="leading" secondItem="u6e-mK-8M0" secondAttribute="leading" constant="24" id="SDy-MC-adM"/>
                                 <constraint firstItem="Fi3-oy-ITV" firstAttribute="centerX" secondItem="u6e-mK-8M0" secondAttribute="centerX" id="VZP-Kq-byW"/>
                                 <constraint firstItem="eB0-aZ-wcg" firstAttribute="centerX" secondItem="u6e-mK-8M0" secondAttribute="centerX" id="b5w-Ph-ytl"/>
-                                <constraint firstItem="t68-Bp-jWz" firstAttribute="top" secondItem="u6e-mK-8M0" secondAttribute="top" constant="55" id="m6Y-yC-Xwf"/>
                                 <constraint firstItem="417-QC-MEc" firstAttribute="top" secondItem="eB0-aZ-wcg" secondAttribute="bottom" constant="11" id="q76-IW-jZg"/>
-                                <constraint firstItem="eB0-aZ-wcg" firstAttribute="top" secondItem="t68-Bp-jWz" secondAttribute="bottom" constant="50" id="vi3-dc-UO5"/>
                             </constraints>
                         </view>
                     </subviews>

@@ -49,6 +49,22 @@
 		A977F99D241FD74A00CDDF19 /* SignInProtocoles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A977F99C241FD74A00CDDF19 /* SignInProtocoles.swift */; };
 		A977F99F241FE53100CDDF19 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A977F99E241FE53100CDDF19 /* SignInPresenter.swift */; };
 		A977F9A1241FE7CD00CDDF19 /* SignInIntercator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A977F9A0241FE7CD00CDDF19 /* SignInIntercator.swift */; };
+		A98A647024213B720035ED85 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A646F24213B720035ED85 /* SignInRouter.swift */; };
+		A98A64762421420D0035ED85 /* AddLostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A64742421420D0035ED85 /* AddLostViewController.swift */; };
+		A98A64772421420D0035ED85 /* AddLostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98A64752421420D0035ED85 /* AddLostViewController.xib */; };
+		A98A647C242142560035ED85 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98A647A242142560035ED85 /* SearchViewController.xib */; };
+		A98A647D242142560035ED85 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A647B242142560035ED85 /* SearchViewController.swift */; };
+		A98A6482242142900035ED85 /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98A6480242142900035ED85 /* NotificationsViewController.xib */; };
+		A98A6483242142900035ED85 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A6481242142900035ED85 /* NotificationsViewController.swift */; };
+		A98A648E242144850035ED85 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98A648C242144850035ED85 /* ChatViewController.xib */; };
+		A98A648F242144850035ED85 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A648D242144850035ED85 /* ChatViewController.swift */; };
+		A98A6496242144EF0035ED85 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A6494242144EF0035ED85 /* HomeListViewController.swift */; };
+		A98A6497242144EF0035ED85 /* HomeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98A6495242144EF0035ED85 /* HomeListViewController.xib */; };
+		A98A649B242145210035ED85 /* HomeMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A6499242145210035ED85 /* HomeMapViewController.swift */; };
+		A98A649C242145210035ED85 /* HomeMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98A649A242145210035ED85 /* HomeMapViewController.xib */; };
+		A98A64A1242145840035ED85 /* LOFOTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A649F242145840035ED85 /* LOFOTabBarController.swift */; };
+		A98A64A2242145840035ED85 /* LOFOTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98A64A0242145840035ED85 /* LOFOTabBarController.xib */; };
+		A98A64A424215C650035ED85 /* LOFOBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A64A324215C650035ED85 /* LOFOBackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +135,22 @@
 		A977F99C241FD74A00CDDF19 /* SignInProtocoles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocoles.swift; sourceTree = "<group>"; };
 		A977F99E241FE53100CDDF19 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
 		A977F9A0241FE7CD00CDDF19 /* SignInIntercator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInIntercator.swift; sourceTree = "<group>"; };
+		A98A646F24213B720035ED85 /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
+		A98A64742421420D0035ED85 /* AddLostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLostViewController.swift; sourceTree = "<group>"; };
+		A98A64752421420D0035ED85 /* AddLostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddLostViewController.xib; sourceTree = "<group>"; };
+		A98A647A242142560035ED85 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		A98A647B242142560035ED85 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A98A6480242142900035ED85 /* NotificationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
+		A98A6481242142900035ED85 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		A98A648C242144850035ED85 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		A98A648D242144850035ED85 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A98A6494242144EF0035ED85 /* HomeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
+		A98A6495242144EF0035ED85 /* HomeListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeListViewController.xib; sourceTree = "<group>"; };
+		A98A6499242145210035ED85 /* HomeMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeMapViewController.swift; sourceTree = "<group>"; };
+		A98A649A242145210035ED85 /* HomeMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMapViewController.xib; sourceTree = "<group>"; };
+		A98A649F242145840035ED85 /* LOFOTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LOFOTabBarController.swift; sourceTree = "<group>"; };
+		A98A64A0242145840035ED85 /* LOFOTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LOFOTabBarController.xib; sourceTree = "<group>"; };
+		A98A64A324215C650035ED85 /* LOFOBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOFOBackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +324,7 @@
 				A94A126C241E9DAC006C9F4B /* CustomButton.swift */,
 				A94A126E241E9DAC006C9F4B /* EllipseView.swift */,
 				A94A126D241E9DAC006C9F4B /* LOFOTabBar.swift */,
+				A98A64A324215C650035ED85 /* LOFOBackButton.swift */,
 			);
 			path = CustomsControls;
 			sourceTree = "<group>";
@@ -323,8 +356,8 @@
 			isa = PBXGroup;
 			children = (
 				A94A1278241E9F22006C9F4B /* Authentification */,
-				A94A1274241E9EC4006C9F4B /* Entities */,
 				A94A1273241E9EB2006C9F4B /* DashBoard */,
+				A94A1274241E9EC4006C9F4B /* Entities */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -332,6 +365,13 @@
 		A94A1273241E9EB2006C9F4B /* DashBoard */ = {
 			isa = PBXGroup;
 			children = (
+				A98A649D242145360035ED85 /* LOFOTabBar */,
+				A98A6490242144AA0035ED85 /* Home */,
+				A98A64842421429F0035ED85 /* Chat */,
+				A98A647E242142620035ED85 /* Notifications */,
+				A98A6478242142190035ED85 /* Search */,
+				A98A6472242141DB0035ED85 /* AddLost */,
+				A98A647124213C130035ED85 /* MyLostedElements */,
 			);
 			path = DashBoard;
 			sourceTree = "<group>";
@@ -446,6 +486,7 @@
 		A94A1297241EB067006C9F4B /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				A98A646F24213B720035ED85 /* SignInRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -462,6 +503,157 @@
 			children = (
 			);
 			path = Interactors;
+			sourceTree = "<group>";
+		};
+		A98A647124213C130035ED85 /* MyLostedElements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyLostedElements;
+			sourceTree = "<group>";
+		};
+		A98A6472242141DB0035ED85 /* AddLost */ = {
+			isa = PBXGroup;
+			children = (
+				A98A6473242141EB0035ED85 /* Views */,
+			);
+			path = AddLost;
+			sourceTree = "<group>";
+		};
+		A98A6473242141EB0035ED85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A98A64742421420D0035ED85 /* AddLostViewController.swift */,
+				A98A64752421420D0035ED85 /* AddLostViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A98A6478242142190035ED85 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A98A6479242142240035ED85 /* Views */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A98A6479242142240035ED85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A98A647B242142560035ED85 /* SearchViewController.swift */,
+				A98A647A242142560035ED85 /* SearchViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A98A647E242142620035ED85 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				A98A647F2421426F0035ED85 /* Views */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		A98A647F2421426F0035ED85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A98A6481242142900035ED85 /* NotificationsViewController.swift */,
+				A98A6480242142900035ED85 /* NotificationsViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A98A64842421429F0035ED85 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A98A64862421435F0035ED85 /* List Chat */,
+				A98A6485242143530035ED85 /* Chat Room */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		A98A6485242143530035ED85 /* Chat Room */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Chat Room";
+			sourceTree = "<group>";
+		};
+		A98A64862421435F0035ED85 /* List Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A98A6487242144320035ED85 /* Views */,
+			);
+			path = "List Chat";
+			sourceTree = "<group>";
+		};
+		A98A6487242144320035ED85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A98A648D242144850035ED85 /* ChatViewController.swift */,
+				A98A648C242144850035ED85 /* ChatViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A98A6490242144AA0035ED85 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A98A6492242144BD0035ED85 /* Map */,
+				A98A6491242144B70035ED85 /* List */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A98A6491242144B70035ED85 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				A98A6493242144C70035ED85 /* Views */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		A98A6492242144BD0035ED85 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A98A6498242144FC0035ED85 /* Views */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		A98A6493242144C70035ED85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A98A6494242144EF0035ED85 /* HomeListViewController.swift */,
+				A98A6495242144EF0035ED85 /* HomeListViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A98A6498242144FC0035ED85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A98A6499242145210035ED85 /* HomeMapViewController.swift */,
+				A98A649A242145210035ED85 /* HomeMapViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A98A649D242145360035ED85 /* LOFOTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A98A649E242145540035ED85 /* Views */,
+			);
+			path = LOFOTabBar;
+			sourceTree = "<group>";
+		};
+		A98A649E242145540035ED85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A98A649F242145840035ED85 /* LOFOTabBarController.swift */,
+				A98A64A0242145840035ED85 /* LOFOTabBarController.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -571,24 +763,31 @@
 			files = (
 				A94A1250241E8E15006C9F4B /* Poppins-Bold.otf in Resources */,
 				A94A1255241E8E15006C9F4B /* Poppins-Medium.otf in Resources */,
+				A98A648E242144850035ED85 /* ChatViewController.xib in Resources */,
 				A94A1251241E8E15006C9F4B /* Poppins-Black.otf in Resources */,
 				A94A127F241EA374006C9F4B /* localizable.strings in Resources */,
+				A98A649C242145210035ED85 /* HomeMapViewController.xib in Resources */,
 				A94A125C241E8E15006C9F4B /* Poppins-ExtraBoldItalic.otf in Resources */,
 				A94A1213241E891E006C9F4B /* LaunchScreen.storyboard in Resources */,
 				A94A124F241E8E15006C9F4B /* Poppins-Light.otf in Resources */,
 				A94A1252241E8E15006C9F4B /* Poppins-MediumItalic.otf in Resources */,
 				A94A125B241E8E15006C9F4B /* Poppins-SemiBoldItalic.otf in Resources */,
 				A94A1256241E8E15006C9F4B /* Poppins-Regular.otf in Resources */,
+				A98A6497242144EF0035ED85 /* HomeListViewController.xib in Resources */,
 				A94A1259241E8E15006C9F4B /* Poppins-BlackItalic.otf in Resources */,
 				A94A125D241E8E15006C9F4B /* Poppins-ThinItalic.otf in Resources */,
 				A94A1253241E8E15006C9F4B /* Poppins-Italic.otf in Resources */,
+				A98A647C242142560035ED85 /* SearchViewController.xib in Resources */,
 				A94A1254241E8E15006C9F4B /* Poppins-LightItalic.otf in Resources */,
+				A98A6482242142900035ED85 /* NotificationsViewController.xib in Resources */,
+				A98A64A2242145840035ED85 /* LOFOTabBarController.xib in Resources */,
 				A94A1257241E8E15006C9F4B /* Poppins-SemiBold.otf in Resources */,
 				A94A125A241E8E15006C9F4B /* Poppins-ExtraLightItalic.otf in Resources */,
 				A94A128B241EA431006C9F4B /* SignUpViewController.xib in Resources */,
 				A94A125E241E8E15006C9F4B /* Poppins-ExtraLight.otf in Resources */,
 				A94A128F241EA4D9006C9F4B /* SignInViewController.xib in Resources */,
 				A94A1210241E891E006C9F4B /* Assets.xcassets in Resources */,
+				A98A64772421420D0035ED85 /* AddLostViewController.xib in Resources */,
 				A94A124D241E8E15006C9F4B /* Poppins-Thin.otf in Resources */,
 				A94A1258241E8E15006C9F4B /* Poppins-BoldItalic.otf in Resources */,
 				A94A124E241E8E15006C9F4B /* Poppins-ExtraBold.otf in Resources */,
@@ -616,7 +815,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98A647024213B720035ED85 /* SignInRouter.swift in Sources */,
 				A94A1294241EA948006C9F4B /* AuthAPIService.swift in Sources */,
+				A98A648F242144850035ED85 /* ChatViewController.swift in Sources */,
+				A98A6496242144EF0035ED85 /* HomeListViewController.swift in Sources */,
 				A94A128E241EA4D9006C9F4B /* SignInViewController.swift in Sources */,
 				A94A120E241E891A006C9F4B /* LOFOTunisia.xcdatamodeld in Sources */,
 				A94A1204241E891A006C9F4B /* AppDelegate.swift in Sources */,
@@ -624,9 +826,15 @@
 				A94A1292241EA8AE006C9F4B /* LoginAPIService.swift in Sources */,
 				A94A1296241EAEAB006C9F4B /* User.swift in Sources */,
 				A977F99F241FE53100CDDF19 /* SignInPresenter.swift in Sources */,
+				A98A64A1242145840035ED85 /* LOFOTabBarController.swift in Sources */,
 				A94A126A241E8EF0006C9F4B /* UIColorExtension.swift in Sources */,
+				A98A649B242145210035ED85 /* HomeMapViewController.swift in Sources */,
+				A98A64A424215C650035ED85 /* LOFOBackButton.swift in Sources */,
+				A98A647D242142560035ED85 /* SearchViewController.swift in Sources */,
 				A94A128A241EA431006C9F4B /* SignUpViewController.swift in Sources */,
+				A98A6483242142900035ED85 /* NotificationsViewController.swift in Sources */,
 				A977F9A1241FE7CD00CDDF19 /* SignInIntercator.swift in Sources */,
+				A98A64762421420D0035ED85 /* AddLostViewController.swift in Sources */,
 				A94A126F241E9DAC006C9F4B /* CustomButton.swift in Sources */,
 				A977F99D241FD74A00CDDF19 /* SignInProtocoles.swift in Sources */,
 				A94A1206241E891A006C9F4B /* SceneDelegate.swift in Sources */,
@@ -810,13 +1018,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 99J6CKC79H;
+				DEVELOPMENT_TEAM = 3X72U4HH78;
 				INFOPLIST_FILE = "$(SRCROOT)/LOFOTunisia/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobilepowered.LOFOTunisia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LOFOTunisia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -828,13 +1036,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 99J6CKC79H;
+				DEVELOPMENT_TEAM = 3X72U4HH78;
 				INFOPLIST_FILE = "$(SRCROOT)/LOFOTunisia/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobilepowered.LOFOTunisia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LOFOTunisia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
