@@ -20,10 +20,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowsScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowsScene.coordinateSpace.bounds)
         window?.windowScene = windowsScene
-        let signInRouter = SignInRouter().createSignInModule()
-        let navigation = UINavigationController(rootViewController: signInRouter)
-        navigation.setNavigationBarHidden(true, animated: false)
-        window?.rootViewController = navigation
         window?.makeKeyAndVisible()
         guard let _ = (scene as? UIWindowScene) else { return }
     }

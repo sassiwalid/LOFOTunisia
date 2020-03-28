@@ -24,11 +24,9 @@ import UIKit
         self.layer.cornerRadius = 5
         self.layer.maskedCorners = [.layerMinXMinYCorner,.layerMinXMaxYCorner]
         self.backgroundColor = .white
-        let image = UIImageView(image: UIImage(named: "backImage"))
-        image.centerXAnchor.constraint(equalToSystemSpacingAfter: self.centerXAnchor, multiplier: 1.0).isActive = true
-        image.centerYAnchor.constraint(equalToSystemSpacingBelow: self.centerYAnchor, multiplier: 1.0).isActive = true
-        self.addSubview(image)
-
+        self.setBackgroundImage(UIImage(named:"backImage"), for: .normal)
+        self.contentMode = .center
+        self.imageView?.contentMode = .scaleAspectFit
     }
     
 }
