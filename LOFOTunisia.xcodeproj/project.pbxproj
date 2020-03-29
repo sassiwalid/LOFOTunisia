@@ -81,6 +81,14 @@
 		A98A64A1242145840035ED85 /* LOFOTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A649F242145840035ED85 /* LOFOTabBarController.swift */; };
 		A98A64A2242145840035ED85 /* LOFOTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98A64A0242145840035ED85 /* LOFOTabBarController.xib */; };
 		A98A64A424215C650035ED85 /* LOFOBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A64A324215C650035ED85 /* LOFOBackButton.swift */; };
+		A9B1389F2430A71500D8AF81 /* SignUpUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1389E2430A71500D8AF81 /* SignUpUserRepository.swift */; };
+		A9B138A12430A87C00D8AF81 /* SignUpUserRepositoryNetworkingImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B138A02430A87C00D8AF81 /* SignUpUserRepositoryNetworkingImplementation.swift */; };
+		A9B138A62430B25600D8AF81 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B138A22430B25500D8AF81 /* SignUpCoordinator.swift */; };
+		A9B138A72430B25600D8AF81 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B138A32430B25600D8AF81 /* Coordinator.swift */; };
+		A9B138A82430B25600D8AF81 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B138A42430B25600D8AF81 /* LoginCoordinator.swift */; };
+		A9B138A92430B25600D8AF81 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B138A52430B25600D8AF81 /* AppCoordinator.swift */; };
+		A9B138AB2431184000D8AF81 /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B138AA2431184000D8AF81 /* iOSDropDown.framework */; };
+		A9B138AD24311BA100D8AF81 /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9B138AC24311BA100D8AF81 /* colors.plist */; };
 		CAE46BE140EC990993DCF2FB /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAA9C3BFC128B7EC6E6589B /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -187,6 +195,14 @@
 		A98A649F242145840035ED85 /* LOFOTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LOFOTabBarController.swift; sourceTree = "<group>"; };
 		A98A64A0242145840035ED85 /* LOFOTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LOFOTabBarController.xib; sourceTree = "<group>"; };
 		A98A64A324215C650035ED85 /* LOFOBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOFOBackButton.swift; sourceTree = "<group>"; };
+		A9B1389E2430A71500D8AF81 /* SignUpUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserRepository.swift; sourceTree = "<group>"; };
+		A9B138A02430A87C00D8AF81 /* SignUpUserRepositoryNetworkingImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserRepositoryNetworkingImplementation.swift; sourceTree = "<group>"; };
+		A9B138A22430B25500D8AF81 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
+		A9B138A32430B25600D8AF81 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A9B138A42430B25600D8AF81 /* LoginCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		A9B138A52430B25600D8AF81 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A9B138AA2431184000D8AF81 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B138AC24311BA100D8AF81 /* colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors.plist; sourceTree = "<group>"; };
 		C466DC283E0105D727188C8A /* Pods-LOFOTunisiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.release.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.release.xcconfig"; sourceTree = "<group>"; };
 		D0FFCFFF160134F31A2BC169 /* Pods-LOFOTunisiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DFAA9C3BFC128B7EC6E6589B /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOFOTunisia_LOFOTunisiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B138AB2431184000D8AF81 /* iOSDropDown.framework in Frameworks */,
 				381CF7D233CC8D60F685EDBC /* Pods_LOFOTunisia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +241,7 @@
 		11799E184B5D958D3AAD3A9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9B138AA2431184000D8AF81 /* iOSDropDown.framework */,
 				1D01334F701D5E60158D22E4 /* Pods_LOFOTunisia.framework */,
 				DFAA9C3BFC128B7EC6E6589B /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework */,
 				2D5573DA01DBD4B13B4AE633 /* Pods_LOFOTunisiaTests.framework */,
@@ -264,6 +282,10 @@
 		A918AEC7242FDD6E00B6B9B8 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				A9B138A52430B25600D8AF81 /* AppCoordinator.swift */,
+				A9B138A32430B25600D8AF81 /* Coordinator.swift */,
+				A9B138A42430B25600D8AF81 /* LoginCoordinator.swift */,
+				A9B138A22430B25500D8AF81 /* SignUpCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -407,6 +429,7 @@
 			isa = PBXGroup;
 			children = (
 				A918AEE7242FECDB00B6B9B8 /* UserDataRepository.swift */,
+				A9B1389E2430A71500D8AF81 /* SignUpUserRepository.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -415,6 +438,7 @@
 			isa = PBXGroup;
 			children = (
 				A918AF01243000F600B6B9B8 /* UserDataRepositoryNetworkingImplementation.swift */,
+				A9B138A02430A87C00D8AF81 /* SignUpUserRepositoryNetworkingImplementation.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -579,6 +603,7 @@
 		A94A1263241E8E53006C9F4B /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				A9B138AC24311BA100D8AF81 /* colors.plist */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -1000,6 +1025,7 @@
 				A94A1257241E8E15006C9F4B /* Poppins-SemiBold.otf in Resources */,
 				A94A125A241E8E15006C9F4B /* Poppins-ExtraLightItalic.otf in Resources */,
 				A94A128B241EA431006C9F4B /* SignUpViewController.xib in Resources */,
+				A9B138AD24311BA100D8AF81 /* colors.plist in Resources */,
 				A94A125E241E8E15006C9F4B /* Poppins-ExtraLight.otf in Resources */,
 				A94A128F241EA4D9006C9F4B /* SignInViewController.xib in Resources */,
 				A94A1210241E891E006C9F4B /* Assets.xcassets in Resources */,
@@ -1154,8 +1180,10 @@
 				A98A648F242144850035ED85 /* ChatViewController.swift in Sources */,
 				A918AEF8242FF5BF00B6B9B8 /* LoginResponse.swift in Sources */,
 				A918AF02243000F600B6B9B8 /* UserDataRepositoryNetworkingImplementation.swift in Sources */,
+				A9B1389F2430A71500D8AF81 /* SignUpUserRepository.swift in Sources */,
 				A98A6496242144EF0035ED85 /* HomeListViewController.swift in Sources */,
 				A918AEE3242FE77200B6B9B8 /* SignUpViewContract.swift in Sources */,
+				A9B138A92430B25600D8AF81 /* AppCoordinator.swift in Sources */,
 				A918AEE0242FE74500B6B9B8 /* SignUpPresenterImplementation.swift in Sources */,
 				A918AEED242FF39A00B6B9B8 /* LoginInteractor.swift in Sources */,
 				A918AEF4242FF46200B6B9B8 /* SignUpInteractorImplementation.swift in Sources */,
@@ -1167,6 +1195,7 @@
 				A94A1296241EAEAB006C9F4B /* User.swift in Sources */,
 				A918AEEF242FF3C300B6B9B8 /* LoginInteractorImplementation.swift in Sources */,
 				A977F99F241FE53100CDDF19 /* SignInPresenter.swift in Sources */,
+				A9B138A62430B25600D8AF81 /* SignUpCoordinator.swift in Sources */,
 				A918AED8242FE6C400B6B9B8 /* PresenterAssembly.swift in Sources */,
 				A98A64A1242145840035ED85 /* LOFOTabBarController.swift in Sources */,
 				A94A126A241E8EF0006C9F4B /* UIColorExtension.swift in Sources */,
@@ -1176,6 +1205,8 @@
 				A98A649B242145210035ED85 /* HomeMapViewController.swift in Sources */,
 				A918AF00242FFED400B6B9B8 /* InteractorAssembly.swift in Sources */,
 				A98A64A424215C650035ED85 /* LOFOBackButton.swift in Sources */,
+				A9B138A12430A87C00D8AF81 /* SignUpUserRepositoryNetworkingImplementation.swift in Sources */,
+				A9B138A72430B25600D8AF81 /* Coordinator.swift in Sources */,
 				A918AEDC242FE71000B6B9B8 /* SignInPresenterImplementation.swift in Sources */,
 				A98A647D242142560035ED85 /* SearchViewController.swift in Sources */,
 				A94A128A241EA431006C9F4B /* SignUpViewController.swift in Sources */,
@@ -1189,6 +1220,7 @@
 				A918AEDA242FE6C400B6B9B8 /* RepositoryAssembly.swift in Sources */,
 				A94A1206241E891A006C9F4B /* SceneDelegate.swift in Sources */,
 				A94A1271241E9DAC006C9F4B /* EllipseView.swift in Sources */,
+				A9B138A82430B25600D8AF81 /* LoginCoordinator.swift in Sources */,
 				A94A1267241E8EE7006C9F4B /* Constants.swift in Sources */,
 				A94A1270241E9DAC006C9F4B /* LOFOTabBar.swift in Sources */,
 			);

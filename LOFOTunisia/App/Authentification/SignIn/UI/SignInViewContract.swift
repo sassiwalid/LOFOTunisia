@@ -9,5 +9,8 @@
 import Foundation
 
 protocol SignInViewContract {
-    
+    func showLoading()
+    func hideLoading()
+    func displayError()
+    func displaySuccess()
 }

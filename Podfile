@@ -7,6 +7,7 @@ target 'LOFOTunisia' do
 
   # Pods for LOFOTunisia
     pod 'Swinject', '2.7.1'
+    pod 'iOSDropDown'
   target 'LOFOTunisiaTests' do
     inherit! :search_paths
     # Pods for testing

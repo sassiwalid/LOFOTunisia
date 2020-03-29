@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import iOSDropDown
 class SignUpViewController: UIViewController {
     // MARK: - IBOutlets
 
@@ -16,16 +17,44 @@ class SignUpViewController: UIViewController {
     @IBOutlet var confPasswordText: UITextField!
     @IBOutlet var passwordText: UITextField!
     @IBOutlet var emailText: UITextField!
-    @IBOutlet var cityText: UITextField!
+    @IBOutlet weak var cityText: DropDown!
     @IBOutlet var ageText: UITextField!
     @IBOutlet var subNameText: UITextField!
     @IBOutlet var nameText: UITextField!
     @IBOutlet var addPhotoView: EllipseView!
 
     // MARK: - Variables
-
+    var presenter:SignUpPresenterProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setupColors()
     }
+    private func setupColors() {
+        self.view.backgroundColor = UIColor.gray
+    }
+    @IBAction func createUserButtonClicked(_ sender: Any) {
+        guard let email = emailText.text, let password = passwordText.text, let age = Int(ageText.text ?? "0"), let city = cityText.text, let name = nameText.text, let subName = subNameText.text else{
+            return
+        }
+        presenter?.didTappedCreateUser(email: email, password: password, age: age, city: city, name: name, subName: subName)
+    }
+    
+    @IBAction func didTapBackButton(_ sender: Any) {
+        presenter?.didtapBack()
+    }
+}
+extension SignUpViewController: SignUpViewContract{
+    func showLoading() {
+    }
+    
+    func showSuccess() {
+
+    }
+    
+    func showError() {
+
+    }
+    
+    
 }

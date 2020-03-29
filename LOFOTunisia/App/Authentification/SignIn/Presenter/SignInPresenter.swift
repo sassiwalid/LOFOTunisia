@@ -10,8 +10,14 @@ import Foundation
 import UIKit
 
 protocol SignInPresenterProtocol {
+    func didTapLoginButton(login:String, password:String)
+    func didTapCreateUser()
+    func didTapFBButton()
+    func didTapGmailButton()
 }
 /// Login Presenter Delegate handle the intercation betwen the presenter and the LoginCoordinator
 public protocol LoginPresenterDelegate: class {
     func openDashboard()
+    func loginPresenterDelegateDidTappedAddUser()
+    func didBackFromCreateUserView()
 }

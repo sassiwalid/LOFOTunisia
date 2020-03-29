@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+
+class SignUpInteractorImplementation: SignUpInteractor {
+    let signUpuserRepository:SignUpUserRepository?
+    init(signUpuserRepository:SignUpUserRepository) {
+        self.signUpuserRepository = signUpuserRepository
+    }
+    func execute(_ loginRequest: SignUpRequest, completion: @escaping (SignUpResponse) -> Void) {
+        
+    }
+
+}

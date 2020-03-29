@@ -16,6 +16,9 @@ public class RepositoryAssembly: Assembly {
             // instanciate it when needed
             UserDataRepositoryNetworkingImplementation()
         }
+        container.register(SignUpUserRepository.self) { _ in
+            SignUpUserRepositoryNetworkingImplementation()
+        }
     }
     
     

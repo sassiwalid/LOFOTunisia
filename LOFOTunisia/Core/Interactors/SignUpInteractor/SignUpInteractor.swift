@@ -9,5 +9,5 @@
 import Foundation
 
 protocol SignUpInteractor {
-    func execute (_ loginRequest: LoginRequest, completion: @escaping (LoginResponse) -> Void )
+    func execute (_ loginRequest: SignUpRequest, completion: @escaping (SignUpResponse) -> Void )
 }

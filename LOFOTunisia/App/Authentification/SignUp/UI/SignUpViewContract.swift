@@ -9,4 +9,7 @@
 import Foundation
 
 protocol SignUpViewContract {
+    func showLoading()
+    func showSuccess()
+    func showError()
 }

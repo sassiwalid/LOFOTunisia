@@ -21,10 +21,9 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var checkUserActivityIndicator: UIActivityIndicatorView!
     
     // MARK: - Variables
-
+    var presenter:SignInPresenterProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.stopAnimation()
         addTapGesture()
         // Do any additional setup after loading the view.
     }
@@ -34,19 +33,35 @@ class SignInViewController: UIViewController {
         signUpLabel.isUserInteractionEnabled = true
     }
     @objc private func didTapSignUPLabel(_ sender: UITapGestureRecognizer){
+        presenter?.didTapCreateUser()
     }
 
     @IBAction func signInButtonClicked(_ sender: Any) {
-        checkUserActivityIndicator.isHidden = false
-        checkUserActivityIndicator.startAnimating()
+        if let email = emailTextField.text, let password = passwordTextField.text {
+              presenter?.didTapLoginButton(login: email, password: password)
+        }
     }
-    private func stopAnimation(){
-        checkUserActivityIndicator.stopAnimating()
-        checkUserActivityIndicator.isHidden = true
+    @IBAction func fbButtonClicked(_ sender: Any) {
+        presenter?.didTapFBButton()
     }
 
-    @IBAction func fbButtonClicked(_ sender: Any) {}
+    @IBAction func gmailButtonClicked(_ sender: Any) {
+        presenter?.didTapGmailButton()
+    }
 
-    @IBAction func gmailButtonClicked(_ sender: Any) {}
+}
 
+extension SignInViewController:SignInViewContract {
+    func showLoading() {
+    }
+    
+    func hideLoading() {
+    }
+    
+    func displayError() {
+    }
+    
+    func displaySuccess() {
+    }
+    
 }
