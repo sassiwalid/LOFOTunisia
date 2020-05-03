@@ -65,6 +65,11 @@
 		A94A128E241EA4D9006C9F4B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A128C241EA4D9006C9F4B /* SignInViewController.swift */; };
 		A94A128F241EA4D9006C9F4B /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94A128D241EA4D9006C9F4B /* SignInViewController.xib */; };
 		A94A1296241EAEAB006C9F4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1295241EAEAB006C9F4B /* User.swift */; };
+		A966A370243A30A900364313 /* FBResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A966A36F243A30A900364313 /* FBResponse.swift */; };
+		A966A373243A36A900364313 /* SignInPresenterImpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A966A372243A36A900364313 /* SignInPresenterImpTests.swift */; };
+		A966A37C243A3E2A00364313 /* UserDataRepositoryNetworkingImplementationFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = A966A37A243A3E2A00364313 /* UserDataRepositoryNetworkingImplementationFake.swift */; };
+		A966A37D243A3E2A00364313 /* LoginInteractorImpFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = A966A37B243A3E2A00364313 /* LoginInteractorImpFake.swift */; };
+		A966A380243A58CA00364313 /* SocialMedias.swift in Sources */ = {isa = PBXBuildFile; fileRef = A966A37F243A58CA00364313 /* SocialMedias.swift */; };
 		A977F99F241FE53100CDDF19 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A977F99E241FE53100CDDF19 /* SignInPresenter.swift */; };
 		A98A64762421420D0035ED85 /* AddLostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A64742421420D0035ED85 /* AddLostViewController.swift */; };
 		A98A64772421420D0035ED85 /* AddLostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98A64752421420D0035ED85 /* AddLostViewController.xib */; };
@@ -110,11 +115,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01D0D0CCE9165264EB380654 /* Pods-LOFOTunisiaTests.stubs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.stubs.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.stubs.xcconfig"; sourceTree = "<group>"; };
 		026A536CFD1E0479A3D18D06 /* Pods-LOFOTunisia-LOFOTunisiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia-LOFOTunisiaUITests.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia-LOFOTunisiaUITests/Pods-LOFOTunisia-LOFOTunisiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F8C3AB7D102A84497587ECA /* Pods-LOFOTunisia-LOFOTunisiaUITests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia-LOFOTunisiaUITests.production.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia-LOFOTunisiaUITests/Pods-LOFOTunisia-LOFOTunisiaUITests.production.xcconfig"; sourceTree = "<group>"; };
+		1B1B7846A5B58E41BF507879 /* Pods-LOFOTunisia-LOFOTunisiaUITests.stubs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia-LOFOTunisiaUITests.stubs.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia-LOFOTunisiaUITests/Pods-LOFOTunisia-LOFOTunisiaUITests.stubs.xcconfig"; sourceTree = "<group>"; };
 		1D01334F701D5E60158D22E4 /* Pods_LOFOTunisia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOFOTunisia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5573DA01DBD4B13B4AE633 /* Pods_LOFOTunisiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOFOTunisiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C08866910DF80E327B79CD /* Pods-LOFOTunisia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia.debug.xcconfig"; sourceTree = "<group>"; };
+		43FA7DF8389924A29815CD9B /* Pods-LOFOTunisia.pre-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia.pre-production.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia.pre-production.xcconfig"; sourceTree = "<group>"; };
+		4DDA73ECF22CC08D75F415B2 /* Pods-LOFOTunisiaTests.recette.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.recette.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.recette.xcconfig"; sourceTree = "<group>"; };
 		54B0F6BADA7466EE10924688 /* Pods-LOFOTunisia-LOFOTunisiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia-LOFOTunisiaUITests.release.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia-LOFOTunisiaUITests/Pods-LOFOTunisia-LOFOTunisiaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		668DC2DBF62E76FCAA6349BB /* Pods-LOFOTunisia.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia.production.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia.production.xcconfig"; sourceTree = "<group>"; };
+		6B0D12F673EF7674FA333C7C /* Pods-LOFOTunisia-LOFOTunisiaUITests.pre-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia-LOFOTunisiaUITests.pre-production.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia-LOFOTunisiaUITests/Pods-LOFOTunisia-LOFOTunisiaUITests.pre-production.xcconfig"; sourceTree = "<group>"; };
+		746914DAEA7FED206AE12228 /* Pods-LOFOTunisiaTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.production.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.production.xcconfig"; sourceTree = "<group>"; };
 		A918AED5242FE6C400B6B9B8 /* PresenterAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterAssembly.swift; sourceTree = "<group>"; };
 		A918AED6242FE6C400B6B9B8 /* DependacyProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependacyProvider.swift; sourceTree = "<group>"; };
 		A918AED7242FE6C400B6B9B8 /* RepositoryAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
@@ -179,7 +192,14 @@
 		A94A128C241EA4D9006C9F4B /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A94A128D241EA4D9006C9F4B /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		A94A1295241EAEAB006C9F4B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A966A36F243A30A900364313 /* FBResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBResponse.swift; sourceTree = "<group>"; };
+		A966A372243A36A900364313 /* SignInPresenterImpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenterImpTests.swift; sourceTree = "<group>"; };
+		A966A37A243A3E2A00364313 /* UserDataRepositoryNetworkingImplementationFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataRepositoryNetworkingImplementationFake.swift; sourceTree = "<group>"; };
+		A966A37B243A3E2A00364313 /* LoginInteractorImpFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractorImpFake.swift; sourceTree = "<group>"; };
+		A966A37F243A58CA00364313 /* SocialMedias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMedias.swift; sourceTree = "<group>"; };
 		A977F99E241FE53100CDDF19 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		A982A847245E21E500800021 /* LOFOTunisiaPre-Production.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LOFOTunisiaPre-Production.entitlements"; sourceTree = "<group>"; };
+		A982A848245E21FD00800021 /* LOFOTunisia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LOFOTunisia.entitlements; sourceTree = "<group>"; };
 		A98A64742421420D0035ED85 /* AddLostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLostViewController.swift; sourceTree = "<group>"; };
 		A98A64752421420D0035ED85 /* AddLostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddLostViewController.xib; sourceTree = "<group>"; };
 		A98A647A242142560035ED85 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
@@ -204,8 +224,12 @@
 		A9B138AA2431184000D8AF81 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B138AC24311BA100D8AF81 /* colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors.plist; sourceTree = "<group>"; };
 		C466DC283E0105D727188C8A /* Pods-LOFOTunisiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.release.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.release.xcconfig"; sourceTree = "<group>"; };
+		C7002F818DE318A24B3C0801 /* Pods-LOFOTunisia-LOFOTunisiaUITests.recette.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia-LOFOTunisiaUITests.recette.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia-LOFOTunisiaUITests/Pods-LOFOTunisia-LOFOTunisiaUITests.recette.xcconfig"; sourceTree = "<group>"; };
 		D0FFCFFF160134F31A2BC169 /* Pods-LOFOTunisiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D914ABF860026999BF870F3D /* Pods-LOFOTunisiaTests.pre-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.pre-production.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.pre-production.xcconfig"; sourceTree = "<group>"; };
+		DAE0CCA5490A0FC19EEED1E8 /* Pods-LOFOTunisia.recette.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia.recette.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia.recette.xcconfig"; sourceTree = "<group>"; };
 		DFAA9C3BFC128B7EC6E6589B /* Pods_LOFOTunisia_LOFOTunisiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOFOTunisia_LOFOTunisiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4766F5F409C6E8EE9779F75 /* Pods-LOFOTunisia.stubs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia.stubs.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia.stubs.xcconfig"; sourceTree = "<group>"; };
 		F9D765D7442AF8062F34F666 /* Pods-LOFOTunisia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia.release.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia/Pods-LOFOTunisia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -410,6 +434,7 @@
 				A918AEEE242FF3C300B6B9B8 /* LoginInteractorImplementation.swift */,
 				A918AEF5242FF59A00B6B9B8 /* LoginRequest.swift */,
 				A918AEF7242FF5BF00B6B9B8 /* LoginResponse.swift */,
+				A966A36F243A30A900364313 /* FBResponse.swift */,
 			);
 			path = LoginInteractor;
 			sourceTree = "<group>";
@@ -428,6 +453,7 @@
 		A918AEFD242FFBFF00B6B9B8 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				A966A37E243A58AA00364313 /* Managers */,
 				A918AEE7242FECDB00B6B9B8 /* UserDataRepository.swift */,
 				A9B1389E2430A71500D8AF81 /* SignUpUserRepository.swift */,
 			);
@@ -468,6 +494,8 @@
 		A94A1202241E891A006C9F4B /* LOFOTunisia */ = {
 			isa = PBXGroup;
 			children = (
+				A982A848245E21FD00800021 /* LOFOTunisia.entitlements */,
+				A982A847245E21E500800021 /* LOFOTunisiaPre-Production.entitlements */,
 				A918AEC7242FDD6E00B6B9B8 /* Coordinators */,
 				A918AEC6242FDD5F00B6B9B8 /* Data */,
 				A918AEC5242FDD5600B6B9B8 /* DI */,
@@ -482,6 +510,8 @@
 		A94A121C241E891E006C9F4B /* LOFOTunisiaTests */ = {
 			isa = PBXGroup;
 			children = (
+				A9DAD9CB24393F7D00110F83 /* SignUpTests */,
+				A9DAD9CA24393F6D00110F83 /* SignInTests */,
 				A94A121D241E891E006C9F4B /* LOFOTunisiaTests.swift */,
 				A94A121F241E891E006C9F4B /* Info.plist */,
 			);
@@ -718,6 +748,32 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		A966A371243A35A000364313 /* PresenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				A966A379243A3E2A00364313 /* Mocks */,
+				A966A372243A36A900364313 /* SignInPresenterImpTests.swift */,
+			);
+			path = PresenterTests;
+			sourceTree = "<group>";
+		};
+		A966A379243A3E2A00364313 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A966A37A243A3E2A00364313 /* UserDataRepositoryNetworkingImplementationFake.swift */,
+				A966A37B243A3E2A00364313 /* LoginInteractorImpFake.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A966A37E243A58AA00364313 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A966A37F243A58CA00364313 /* SocialMedias.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		A98A647124213C130035ED85 /* MyLostedElements */ = {
 			isa = PBXGroup;
 			children = (
@@ -878,6 +934,21 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		A9DAD9CA24393F6D00110F83 /* SignInTests */ = {
+			isa = PBXGroup;
+			children = (
+				A966A371243A35A000364313 /* PresenterTests */,
+			);
+			path = SignInTests;
+			sourceTree = "<group>";
+		};
+		A9DAD9CB24393F7D00110F83 /* SignUpTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUpTests;
+			sourceTree = "<group>";
+		};
 		E3C1F7E076DB7738CA272914 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -887,6 +958,18 @@
 				54B0F6BADA7466EE10924688 /* Pods-LOFOTunisia-LOFOTunisiaUITests.release.xcconfig */,
 				D0FFCFFF160134F31A2BC169 /* Pods-LOFOTunisiaTests.debug.xcconfig */,
 				C466DC283E0105D727188C8A /* Pods-LOFOTunisiaTests.release.xcconfig */,
+				F4766F5F409C6E8EE9779F75 /* Pods-LOFOTunisia.stubs.xcconfig */,
+				DAE0CCA5490A0FC19EEED1E8 /* Pods-LOFOTunisia.recette.xcconfig */,
+				668DC2DBF62E76FCAA6349BB /* Pods-LOFOTunisia.production.xcconfig */,
+				43FA7DF8389924A29815CD9B /* Pods-LOFOTunisia.pre-production.xcconfig */,
+				1B1B7846A5B58E41BF507879 /* Pods-LOFOTunisia-LOFOTunisiaUITests.stubs.xcconfig */,
+				C7002F818DE318A24B3C0801 /* Pods-LOFOTunisia-LOFOTunisiaUITests.recette.xcconfig */,
+				0F8C3AB7D102A84497587ECA /* Pods-LOFOTunisia-LOFOTunisiaUITests.production.xcconfig */,
+				6B0D12F673EF7674FA333C7C /* Pods-LOFOTunisia-LOFOTunisiaUITests.pre-production.xcconfig */,
+				01D0D0CCE9165264EB380654 /* Pods-LOFOTunisiaTests.stubs.xcconfig */,
+				4DDA73ECF22CC08D75F415B2 /* Pods-LOFOTunisiaTests.recette.xcconfig */,
+				746914DAEA7FED206AE12228 /* Pods-LOFOTunisiaTests.production.xcconfig */,
+				D914ABF860026999BF870F3D /* Pods-LOFOTunisiaTests.pre-production.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -903,6 +986,7 @@
 				A94A11FD241E891A006C9F4B /* Frameworks */,
 				A94A11FE241E891A006C9F4B /* Resources */,
 				B58F5EB0EA47293BD85F9ADD /* [CP] Embed Pods Frameworks */,
+				A982A849245E22C500800021 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -1131,6 +1215,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A982A849245E22C500800021 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		B58F5EB0EA47293BD85F9ADD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1188,6 +1290,7 @@
 				A918AEED242FF39A00B6B9B8 /* LoginInteractor.swift in Sources */,
 				A918AEF4242FF46200B6B9B8 /* SignUpInteractorImplementation.swift in Sources */,
 				A94A128E241EA4D9006C9F4B /* SignInViewController.swift in Sources */,
+				A966A380243A58CA00364313 /* SocialMedias.swift in Sources */,
 				A94A120E241E891A006C9F4B /* LOFOTunisia.xcdatamodeld in Sources */,
 				A94A1204241E891A006C9F4B /* AppDelegate.swift in Sources */,
 				A94A126B241E8EF0006C9F4B /* UIViewControllerExtension.swift in Sources */,
@@ -1212,6 +1315,7 @@
 				A94A128A241EA431006C9F4B /* SignUpViewController.swift in Sources */,
 				A98A6483242142900035ED85 /* NotificationsViewController.swift in Sources */,
 				A918AEF6242FF59A00B6B9B8 /* LoginRequest.swift in Sources */,
+				A966A370243A30A900364313 /* FBResponse.swift in Sources */,
 				A918AEFA242FF7F800B6B9B8 /* SignUpRequest.swift in Sources */,
 				A918AEDE242FE72900B6B9B8 /* SignUpPresenter.swift in Sources */,
 				A918AEFC242FF81500B6B9B8 /* SignUpResponse.swift in Sources */,
@@ -1230,7 +1334,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A966A37D243A3E2A00364313 /* LoginInteractorImpFake.swift in Sources */,
+				A966A37C243A3E2A00364313 /* UserDataRepositoryNetworkingImplementationFake.swift in Sources */,
 				A94A121E241E891E006C9F4B /* LOFOTunisiaTests.swift in Sources */,
+				A966A373243A36A900364313 /* SignInPresenterImpTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1279,7 +1386,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A94A122B241E891E006C9F4B /* Debug */ = {
+		A94A122B241E891E006C9F4B /* Stubs */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1338,9 +1445,9 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Stubs;
 		};
-		A94A122C241E891E006C9F4B /* Release */ = {
+		A94A122C241E891E006C9F4B /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1393,15 +1500,37 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Production;
 		};
-		A94A122E241E891E006C9F4B /* Debug */ = {
+		A94A122E241E891E006C9F4B /* Stubs */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43C08866910DF80E327B79CD /* Pods-LOFOTunisia.debug.xcconfig */;
+			baseConfigurationReference = F4766F5F409C6E8EE9779F75 /* Pods-LOFOTunisia.stubs.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LOFOTunisia/LOFOTunisia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3X72U4HH78;
+				INFOPLIST_FILE = "$(SRCROOT)/LOFOTunisia/Configurations/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LOFOTunisiaStubs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Stubs;
+		};
+		A94A122F241E891E006C9F4B /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 668DC2DBF62E76FCAA6349BB /* Pods-LOFOTunisia.production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LOFOTunisia/LOFOTunisia.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3X72U4HH78;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/LOFOTunisia/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1412,30 +1541,11 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Debug;
+			name = Production;
 		};
-		A94A122F241E891E006C9F4B /* Release */ = {
+		A94A1231241E891E006C9F4B /* Stubs */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9D765D7442AF8062F34F666 /* Pods-LOFOTunisia.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3X72U4HH78;
-				INFOPLIST_FILE = "$(SRCROOT)/LOFOTunisia/Configurations/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.LOFOTunisia;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		A94A1231241E891E006C9F4B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0FFCFFF160134F31A2BC169 /* Pods-LOFOTunisiaTests.debug.xcconfig */;
+			baseConfigurationReference = 01D0D0CCE9165264EB380654 /* Pods-LOFOTunisiaTests.stubs.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1454,11 +1564,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LOFOTunisia.app/LOFOTunisia";
 			};
-			name = Debug;
+			name = Stubs;
 		};
-		A94A1232241E891E006C9F4B /* Release */ = {
+		A94A1232241E891E006C9F4B /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C466DC283E0105D727188C8A /* Pods-LOFOTunisiaTests.release.xcconfig */;
+			baseConfigurationReference = 746914DAEA7FED206AE12228 /* Pods-LOFOTunisiaTests.production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1477,11 +1587,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LOFOTunisia.app/LOFOTunisia";
 			};
-			name = Release;
+			name = Production;
 		};
-		A94A1234241E891E006C9F4B /* Debug */ = {
+		A94A1234241E891E006C9F4B /* Stubs */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 026A536CFD1E0479A3D18D06 /* Pods-LOFOTunisia-LOFOTunisiaUITests.debug.xcconfig */;
+			baseConfigurationReference = 1B1B7846A5B58E41BF507879 /* Pods-LOFOTunisia-LOFOTunisiaUITests.stubs.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1498,11 +1608,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = LOFOTunisia;
 			};
-			name = Debug;
+			name = Stubs;
 		};
-		A94A1235241E891E006C9F4B /* Release */ = {
+		A94A1235241E891E006C9F4B /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54B0F6BADA7466EE10924688 /* Pods-LOFOTunisia-LOFOTunisiaUITests.release.xcconfig */;
+			baseConfigurationReference = 0F8C3AB7D102A84497587ECA /* Pods-LOFOTunisia-LOFOTunisiaUITests.production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1519,7 +1629,252 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = LOFOTunisia;
 			};
-			name = Release;
+			name = Production;
+		};
+		A982A83B245E218200800021 /* Recette */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Recette;
+		};
+		A982A83C245E218200800021 /* Recette */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAE0CCA5490A0FC19EEED1E8 /* Pods-LOFOTunisia.recette.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LOFOTunisia/LOFOTunisia.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3X72U4HH78;
+				INFOPLIST_FILE = "$(SRCROOT)/LOFOTunisia/Configurations/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LOFOTunisia-Recette";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Recette;
+		};
+		A982A83D245E218200800021 /* Recette */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DDA73ECF22CC08D75F415B2 /* Pods-LOFOTunisiaTests.recette.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99J6CKC79H;
+				INFOPLIST_FILE = LOFOTunisiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilepowered.LOFOTunisiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LOFOTunisia.app/LOFOTunisia";
+			};
+			name = Recette;
+		};
+		A982A83E245E218200800021 /* Recette */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7002F818DE318A24B3C0801 /* Pods-LOFOTunisia-LOFOTunisiaUITests.recette.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99J6CKC79H;
+				INFOPLIST_FILE = LOFOTunisiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilepowered.LOFOTunisiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LOFOTunisia;
+			};
+			name = Recette;
+		};
+		A982A843245E21B500800021 /* Pre-Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Pre-Production";
+		};
+		A982A844245E21B500800021 /* Pre-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43FA7DF8389924A29815CD9B /* Pods-LOFOTunisia.pre-production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "LOFOTunisia/LOFOTunisiaPre-Production.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3X72U4HH78;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/LOFOTunisia/Configurations/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LOFOTunisia-PreProd";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Pre-Production";
+		};
+		A982A845245E21B500800021 /* Pre-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D914ABF860026999BF870F3D /* Pods-LOFOTunisiaTests.pre-production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99J6CKC79H;
+				INFOPLIST_FILE = LOFOTunisiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilepowered.LOFOTunisiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LOFOTunisia.app/LOFOTunisia";
+			};
+			name = "Pre-Production";
+		};
+		A982A846245E21B500800021 /* Pre-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B0D12F673EF7674FA333C7C /* Pods-LOFOTunisia-LOFOTunisiaUITests.pre-production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99J6CKC79H;
+				INFOPLIST_FILE = LOFOTunisiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilepowered.LOFOTunisiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LOFOTunisia;
+			};
+			name = "Pre-Production";
 		};
 /* End XCBuildConfiguration section */
 
@@ -1527,38 +1882,46 @@
 		A94A11FB241E891A006C9F4B /* Build configuration list for PBXProject "LOFOTunisia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A94A122B241E891E006C9F4B /* Debug */,
-				A94A122C241E891E006C9F4B /* Release */,
+				A94A122B241E891E006C9F4B /* Stubs */,
+				A982A83B245E218200800021 /* Recette */,
+				A94A122C241E891E006C9F4B /* Production */,
+				A982A843245E21B500800021 /* Pre-Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 		A94A122D241E891E006C9F4B /* Build configuration list for PBXNativeTarget "LOFOTunisia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A94A122E241E891E006C9F4B /* Debug */,
-				A94A122F241E891E006C9F4B /* Release */,
+				A94A122E241E891E006C9F4B /* Stubs */,
+				A982A83C245E218200800021 /* Recette */,
+				A94A122F241E891E006C9F4B /* Production */,
+				A982A844245E21B500800021 /* Pre-Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 		A94A1230241E891E006C9F4B /* Build configuration list for PBXNativeTarget "LOFOTunisiaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A94A1231241E891E006C9F4B /* Debug */,
-				A94A1232241E891E006C9F4B /* Release */,
+				A94A1231241E891E006C9F4B /* Stubs */,
+				A982A83D245E218200800021 /* Recette */,
+				A94A1232241E891E006C9F4B /* Production */,
+				A982A845245E21B500800021 /* Pre-Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 		A94A1233241E891E006C9F4B /* Build configuration list for PBXNativeTarget "LOFOTunisiaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A94A1234241E891E006C9F4B /* Debug */,
-				A94A1235241E891E006C9F4B /* Release */,
+				A94A1234241E891E006C9F4B /* Stubs */,
+				A982A83E245E218200800021 /* Recette */,
+				A94A1235241E891E006C9F4B /* Production */,
+				A982A846245E21B500800021 /* Pre-Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 /* End XCConfigurationList section */
 

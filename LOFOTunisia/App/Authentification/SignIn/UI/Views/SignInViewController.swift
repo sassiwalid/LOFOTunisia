@@ -25,6 +25,7 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addTapGesture()
+        setupColors()
         // Do any additional setup after loading the view.
     }
     private func addTapGesture(){
@@ -48,10 +49,27 @@ class SignInViewController: UIViewController {
     @IBAction func gmailButtonClicked(_ sender: Any) {
         presenter?.didTapGmailButton()
     }
+    /// setup IBOutlets colors
+    func setupColors() {
+        self.view.backgroundColor = UIColor.primaryColor()
+        fbButton.backgroundColor = UIColor.fbButtonColor()
+        gmailButton.layer.borderColor = UIColor.gmailButtonBorderColor()
+        signInButton.backgroundColor = UIColor.signInButtonColor()
+        emailTextField.textColor = UIColor.black
+        passwordTextField.textColor = UIColor.black
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email",
+        attributes: [NSAttributedString.Key.foregroundColor: UIColor.emailTextColor()])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Mot de passe",
+        attributes: [NSAttributedString.Key.foregroundColor: UIColor.passwordTextColor()])
+    }
 
 }
 
 extension SignInViewController:SignInViewContract {
+    func enableCreateButton(_ status: Bool) {
+        signInButton.isEnabled = status
+    }
+    
     func showLoading() {
     }
     

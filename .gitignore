@@ -1,7 +1,12 @@
 # ignore all CocoaPods files
 #
 ## we recommend against adding the Pods
+.DS_Store
 Pods/
+Build
+xcschememanagement.plist
+ModuleCache.noindex
+UserInterfaceState.xcuserstate
 
 # ignore all userdata
 *xcuserdatad*

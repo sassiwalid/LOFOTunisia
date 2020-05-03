@@ -16,7 +16,7 @@ protocol SignInPresenterProtocol {
     func didTapGmailButton()
 }
 /// Login Presenter Delegate handle the intercation betwen the presenter and the LoginCoordinator
-public protocol LoginPresenterDelegate: class {
+protocol LoginPresenterDelegate{
     func openDashboard()
     func loginPresenterDelegateDidTappedAddUser()
     func didBackFromCreateUserView()

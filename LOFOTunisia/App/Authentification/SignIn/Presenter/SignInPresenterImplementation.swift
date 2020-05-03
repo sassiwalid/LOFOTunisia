@@ -12,8 +12,9 @@ public class SignInPresenterProtocolImplementation :SignInPresenterProtocol{
    
     
     let viewContract: SignInViewContract?
-    let signInInteractor:LoginInteractor?
-    let delegate: LoginPresenterDelegate?
+    weak var signInInteractor:LoginInteractor?
+    var request: LoginRequest?
+    var delegate: LoginPresenterDelegate?
     init(viewContract: SignInViewContract, intercator:LoginInteractor, delegate: LoginPresenterDelegate) {
         self.viewContract = viewContract
         self.signInInteractor = intercator
@@ -25,8 +26,8 @@ public class SignInPresenterProtocolImplementation :SignInPresenterProtocol{
     ///   - password: user password
     func didTapLoginButton(login: String, password: String) {
          viewContract?.showLoading()
-        let request = LoginRequest(login: login, password: password)
-        signInInteractor?.execute(request, completion: { [weak self] response in
+        request = LoginRequest(login: login, password: password)
+        signInInteractor?.execute(request!, completion: { [weak self] response in
             guard let strongSelf = self else {
                 return
             }
@@ -42,7 +43,26 @@ public class SignInPresenterProtocolImplementation :SignInPresenterProtocol{
         delegate?.loginPresenterDelegateDidTappedAddUser()
     }
     
+    /// Should FB API and Return Token when user is authentificated successfully
     func didTapFBButton() {
+        signInInteractor?.execute(completion: { [weak self] response in
+            guard let self = self else {
+                return
+            }
+            guard let myResponse = response else{
+                self.viewContract?.displayError()
+                return
+            }
+            // save User ID and send then to API
+            switch response {
+            case .LOFOErrror : self.viewContract?.displayError()
+            case let .success(data: token):
+            print(token)
+            self.viewContract?.displaySuccess()
+            case .none:
+                print("")
+            }
+        })
     }
     
     func didTapGmailButton() {
