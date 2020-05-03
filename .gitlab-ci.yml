@@ -1,6 +1,10 @@
 stages:
   - lint
   - unit_tests
+
+job_name:
+variables:
+  CI_DEBUG_TRACE: "true"
   
 before_script:
   - bundle install --path vendor/bundle
