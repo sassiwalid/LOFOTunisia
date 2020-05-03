@@ -10,7 +10,7 @@ import Foundation
 @testable import LOFOTunisia
 class LoginInteractorImpFake:LoginInteractor {
     func execute(completion: @escaping (FBResponse?) -> Void) {
-        completion(FBResponse.success(data: "111111"))
+        completion(FBResponse.success(data: "111111")) 
     }
 
     func execute(_ loginRequest: LoginRequest, completion: @escaping (LoginResponse) -> Void) {
