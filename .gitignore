@@ -1,0 +1,7 @@
+# ignore all CocoaPods files
+#
+## we recommend against adding the Pods
+Pods/
+
+# ignore all userdata
+*xcuserdatad*
