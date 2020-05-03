@@ -16,16 +16,14 @@ public class PresenterAssembly: Assembly {
     /// - Parameter container: register all dependancies
     public func assemble(container: Container) {
          // register loginPresenterProtocol in container
-         container.register(SignInPresenterProtocol.self) { r,viewContract,delegate in
+         container.register(SignInPresenterProtocol.self) { resolver,viewContract,delegate in
             // Instancier l'implémentation du protocol
-            SignInPresenterProtocolImplementation(viewContract: viewContract, intercator: r.resolve(LoginInteractor.self)!, delegate: delegate)
+            SignInPresenterProtocolImplementation(viewContract: viewContract, intercator: resolver.resolve(LoginInteractor.self)!, delegate: delegate)
                }.inObjectScope(.container)
         // register signupPresenterProtocol
-        container.register(SignUpPresenterProtocol.self) { r,viewContract,delegate in
+        container.register(SignUpPresenterProtocol.self) { resolver,viewContract,delegate in
             // Instancier l'implémentation du protocol
-            SignUpPresenterImplementation(viewContract: viewContract, signUpInteractor: r.resolve(SignUpInteractor.self)!, delegate: delegate)
+            SignUpPresenterImplementation(viewContract: viewContract, signUpInteractor: resolver.resolve(SignUpInteractor.self)!, delegate: delegate)
         }.inObjectScope(.container)
     }
-    
-    
 }

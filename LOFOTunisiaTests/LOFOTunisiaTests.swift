@@ -7,8 +7,6 @@
 //
 
 import XCTest
-@testable import LOFOTunisia
-
 class LOFOTunisiaTests: XCTestCase {
 
     override func setUp() {

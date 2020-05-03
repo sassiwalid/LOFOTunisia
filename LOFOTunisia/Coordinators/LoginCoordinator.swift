@@ -32,6 +32,7 @@ class LoginCoordinator: Coordinator, LoginPresenterDelegate {
           
     }
     func didBackFromCreateUserView() {
+        self.navigation?.popViewController(animated: true)
         self.removeAllChildren()
     }
 

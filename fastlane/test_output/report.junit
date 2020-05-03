@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='LOFOTunisiaUITests.xctest' tests='2' failures='0'>
+  <testsuite name='LOFOTunisiaUITests.LOFOTunisiaUITests' tests='2' failures='0'>
+    <testcase classname='LOFOTunisiaUITests.LOFOTunisiaUITests' name='testExample' time='3.000'/>
+    <testcase classname='LOFOTunisiaUITests.LOFOTunisiaUITests' name='testLaunchPerformance' time='17.596'/>
+  </testsuite>
+</testsuites>

@@ -11,8 +11,8 @@ import Foundation
 class SignUpPresenterImplementation : SignUpPresenterProtocol {
     
     let viewContract: SignUpViewContract?
-    let signUpInteractor: SignUpInteractor?
-    let delegate:LoginPresenterDelegate?
+    weak var signUpInteractor: SignUpInteractor?
+    var delegate:LoginPresenterDelegate?
     init(viewContract: SignUpViewContract, signUpInteractor:SignUpInteractor, delegate: LoginPresenterDelegate) {
         self.signUpInteractor = signUpInteractor
         self.viewContract = viewContract

@@ -2,7 +2,10 @@
 #
 ## we recommend against adding the Pods
 .DS_Store
+.bundle/
 Pods/
+docs/
+vendor/
 Build
 xcschememanagement.plist
 ModuleCache.noindex
@@ -10,3 +13,5 @@ UserInterfaceState.xcuserstate
 
 # ignore all userdata
 *xcuserdatad*
+*xcshareddata*
+*.lock

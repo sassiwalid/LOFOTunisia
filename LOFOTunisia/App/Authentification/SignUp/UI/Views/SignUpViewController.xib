@@ -16,6 +16,7 @@
                 <outlet property="emailText" destination="1fG-7C-tNQ" id="hOS-zz-53n"/>
                 <outlet property="nameText" destination="7vs-1K-ds9" id="afC-og-qum"/>
                 <outlet property="passwordText" destination="jeG-Hr-8Nu" id="x2C-G9-RYi"/>
+                <outlet property="scrollView" destination="VvM-fl-C3c" id="QOh-UI-tif"/>
                 <outlet property="signUpButton" destination="Fi3-oy-ITV" id="h3L-as-AzF"/>
                 <outlet property="subNameText" destination="Ebo-5d-XlU" id="CQ9-tL-e3V"/>
                 <outlet property="userPhoto" destination="BvL-Ch-hRE" id="SZG-kn-Fu8"/>
@@ -54,7 +55,7 @@
                                     </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="417-QC-MEc">
-                                    <rect key="frame" x="30" y="275.5" width="354" height="501.5"/>
+                                    <rect key="frame" x="30" y="280" width="354" height="497"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n94-mD-ewh" userLabel="Name View">
                                             <rect key="frame" x="0.0" y="0.0" width="354" height="67"/>
@@ -87,7 +88,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Kh-v7-Vof" userLabel="SubName View">
-                                            <rect key="frame" x="0.0" y="72.5" width="354" height="67"/>
+                                            <rect key="frame" x="0.0" y="71.5" width="354" height="67"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Prenom" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebo-5d-XlU">
                                                     <rect key="frame" x="0.0" y="8" width="354" height="17"/>
@@ -117,7 +118,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gw7-R4-Ncl" userLabel="Age View">
-                                            <rect key="frame" x="0.0" y="145" width="354" height="67"/>
+                                            <rect key="frame" x="0.0" y="143.5" width="354" height="67"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j8W-WQ-ziC">
                                                     <rect key="frame" x="0.0" y="8" width="354" height="17"/>
@@ -147,7 +148,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTe-ij-QlI" userLabel="Ville View">
-                                            <rect key="frame" x="0.0" y="217.5" width="354" height="67"/>
+                                            <rect key="frame" x="0.0" y="215" width="354" height="67"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ville" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8EN-c1-FYq" customClass="DropDown" customModule="iOSDropDown">
                                                     <rect key="frame" x="0.0" y="8" width="354" height="17"/>
@@ -177,7 +178,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSh-TT-McZ" userLabel="Email View">
-                                            <rect key="frame" x="0.0" y="289.5" width="354" height="67"/>
+                                            <rect key="frame" x="0.0" y="286.5" width="354" height="67"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1fG-7C-tNQ">
                                                     <rect key="frame" x="0.0" y="8" width="354" height="17"/>
@@ -207,7 +208,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1g-ao-DpC" userLabel="Password View">
-                                            <rect key="frame" x="0.0" y="362" width="354" height="67"/>
+                                            <rect key="frame" x="0.0" y="358.5" width="354" height="67"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mot de passe" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jeG-Hr-8Nu">
                                                     <rect key="frame" x="0.0" y="8" width="354" height="17"/>
@@ -237,7 +238,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4MW-1N-V62" userLabel="Confirmed Password View">
-                                            <rect key="frame" x="0.0" y="434.5" width="354" height="67"/>
+                                            <rect key="frame" x="0.0" y="430" width="354" height="67"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirmer le mot de passe" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1in-84-Kas">
                                                     <rect key="frame" x="0.0" y="8" width="354" height="17"/>
@@ -278,7 +279,7 @@
                                     </constraints>
                                 </stackView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eB0-aZ-wcg" userLabel="Add Photo View" customClass="EllipseView" customModule="LOFOTunisia" customModuleProvider="target">
-                                    <rect key="frame" x="132" y="114.5" width="150" height="150"/>
+                                    <rect key="frame" x="132" y="119" width="150" height="150"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="BvL-Ch-hRE">
                                             <rect key="frame" x="62.5" y="61" width="25.5" height="28"/>
@@ -311,7 +312,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="t68-Bp-jWz" userLabel="Inscription Label">
-                                    <rect key="frame" x="63" y="42.5" width="201" height="42"/>
+                                    <rect key="frame" x="68" y="47" width="201" height="42"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inscription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNb-gU-sE0">
                                             <rect key="frame" x="0.0" y="0.0" width="178" height="42"/>
@@ -334,11 +335,11 @@
                                         </view>
                                     </subviews>
                                 </stackView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8W-90-gNK" userLabel="BackButton" customClass="LOFOBackButton" customModule="LOFOTunisia" customModuleProvider="target">
-                                    <rect key="frame" x="8" y="43" width="47" height="41"/>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8W-90-gNK" userLabel="BackButton" customClass="LOFOBackButton" customModule="LOFOTunisia" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="43" width="60" height="50"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="41" id="b0W-Ua-SBj"/>
-                                        <constraint firstAttribute="width" constant="47" id="wg3-eU-F5k"/>
+                                        <constraint firstAttribute="height" constant="50" id="b0W-Ua-SBj"/>
+                                        <constraint firstAttribute="width" constant="60" id="wg3-eU-F5k"/>
                                     </constraints>
                                     <connections>
                                         <action selector="didTapBackButton:" destination="-1" eventType="touchUpInside" id="HMi-Id-sBu"/>
@@ -354,7 +355,7 @@
                                 <constraint firstItem="417-QC-MEc" firstAttribute="leading" secondItem="u6e-mK-8M0" secondAttribute="leading" constant="30" id="Nh0-SC-R4p"/>
                                 <constraint firstItem="Fi3-oy-ITV" firstAttribute="centerX" secondItem="u6e-mK-8M0" secondAttribute="centerX" id="VZP-Kq-byW"/>
                                 <constraint firstItem="eB0-aZ-wcg" firstAttribute="centerX" secondItem="u6e-mK-8M0" secondAttribute="centerX" id="b5w-Ph-ytl"/>
-                                <constraint firstItem="T8W-90-gNK" firstAttribute="leading" secondItem="u6e-mK-8M0" secondAttribute="leading" constant="8" id="dx5-Dq-Ozr"/>
+                                <constraint firstItem="T8W-90-gNK" firstAttribute="leading" secondItem="u6e-mK-8M0" secondAttribute="leading" id="dx5-Dq-Ozr"/>
                                 <constraint firstItem="T8W-90-gNK" firstAttribute="top" secondItem="u6e-mK-8M0" secondAttribute="top" constant="43" id="mGa-up-UkC"/>
                                 <constraint firstItem="t68-Bp-jWz" firstAttribute="leading" secondItem="T8W-90-gNK" secondAttribute="trailing" constant="8" id="mHb-Mf-2cX"/>
                                 <constraint firstItem="t68-Bp-jWz" firstAttribute="centerY" secondItem="T8W-90-gNK" secondAttribute="centerY" id="o0t-pu-ddS"/>

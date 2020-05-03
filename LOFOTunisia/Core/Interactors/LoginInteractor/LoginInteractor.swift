@@ -7,6 +7,7 @@
 //
 
 import Foundation
-protocol LoginInteractor {
+protocol LoginInteractor:class {
     func execute(_ loginRequest: LoginRequest, completion: @escaping (LoginResponse) -> Void)
+    func execute( completion: @escaping (FBResponse?) -> Void)
 }

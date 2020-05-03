@@ -8,6 +8,11 @@ target 'LOFOTunisia' do
   # Pods for LOFOTunisia
     pod 'Swinject', '2.7.1'
     pod 'iOSDropDown'
+    pod 'IQKeyboardManagerSwift'
+    pod 'FBSDKLoginKit'
+    pod 'FBSDKShareKit'
+    pod 'FBSDKLoginKit'
+    pod 'SwiftLint'
   target 'LOFOTunisiaTests' do
     inherit! :search_paths
     # Pods for testing

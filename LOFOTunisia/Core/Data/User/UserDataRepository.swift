@@ -10,4 +10,5 @@ import Foundation
 
 public protocol UserDataRepository {
     func login(email:String, password:String, onCompletion: ((Bool)-> Void))
+    func FBLogin(onCompletion: @escaping(FBResponse) -> Void)
 }

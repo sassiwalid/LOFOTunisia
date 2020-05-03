@@ -11,11 +11,11 @@ import Swinject
 
 class IntercatorAssembly: Assembly {
     func assemble(container: Container) {
-        container.register(SignUpInteractor.self) { r in
-            SignUpInteractorImplementation(signUpuserRepository: r.resolve(SignUpUserRepository.self)!)
+        container.register(SignUpInteractor.self) { resolver in
+            SignUpInteractorImplementation(signUpuserRepository: resolver.resolve(SignUpUserRepository.self)!)
         }.inObjectScope(.container)
-        container.register(LoginInteractor.self) { r in
-            LoginInteractorImplementation(userDataRepository: r.resolve(UserDataRepository.self)!)
+        container.register(LoginInteractor.self) { resolver in
+            LoginInteractorImplementation(userDataRepository: resolver.resolve(UserDataRepository.self)!)
         }.inObjectScope(.container)
     }
 }

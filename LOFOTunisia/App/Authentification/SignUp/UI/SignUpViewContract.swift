@@ -11,5 +11,6 @@ import Foundation
 protocol SignUpViewContract {
     func showLoading()
     func showSuccess()
+    func enableCreateButton(_ status:Bool)
     func showError()
 }

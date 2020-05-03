@@ -22,7 +22,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet var subNameText: UITextField!
     @IBOutlet var nameText: UITextField!
     @IBOutlet var addPhotoView: EllipseView!
-
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     // MARK: - Variables
     var presenter:SignUpPresenterProtocol?
     override func viewDidLoad() {
@@ -31,7 +32,7 @@ class SignUpViewController: UIViewController {
         setupColors()
     }
     private func setupColors() {
-        self.view.backgroundColor = UIColor.gray
+        scrollView.backgroundColor = UIColor.primaryColor()
     }
     @IBAction func createUserButtonClicked(_ sender: Any) {
         guard let email = emailText.text, let password = passwordText.text, let age = Int(ageText.text ?? "0"), let city = cityText.text, let name = nameText.text, let subName = subNameText.text else{
@@ -45,6 +46,10 @@ class SignUpViewController: UIViewController {
     }
 }
 extension SignUpViewController: SignUpViewContract{
+    func enableCreateButton(_ status: Bool) {
+        signUpButton.isEnabled = status
+    }
+    
     func showLoading() {
     }
     

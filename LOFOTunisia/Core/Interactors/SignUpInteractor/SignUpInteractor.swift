@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol SignUpInteractor {
+protocol SignUpInteractor:class {
     func execute (_ loginRequest: SignUpRequest, completion: @escaping (SignUpResponse) -> Void )
 }

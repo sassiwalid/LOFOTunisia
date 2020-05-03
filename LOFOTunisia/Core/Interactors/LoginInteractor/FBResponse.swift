@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+public enum LOFOError:Error {
+    case serverError(codeStatus:Int)
+    case technicalError(codeStatus:Int)
+}
+public enum FBResponse {
+    case success(data:String)
+    case LOFOErrror
+}

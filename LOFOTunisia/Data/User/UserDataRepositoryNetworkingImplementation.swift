@@ -9,6 +9,18 @@
 import Foundation
 
 class UserDataRepositoryNetworkingImplementation: UserDataRepository {
+    
+    func FBLogin(onCompletion: @escaping (FBResponse) -> Void) {
+        SocialMedias.shared.fbLogin{ token, error  in
+            if let _ = error {
+                onCompletion(.LOFOErrror)
+            }
+            if let token = token {
+                onCompletion(.success(data: token))
+            }
+        }
+    }
+    
     func login(email: String, password: String, onCompletion: ((Bool) -> Void)) {
     }
 }

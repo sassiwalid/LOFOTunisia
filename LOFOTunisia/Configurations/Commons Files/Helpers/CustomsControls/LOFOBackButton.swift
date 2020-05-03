@@ -21,12 +21,15 @@ import UIKit
         sharedInit()
     }
     func sharedInit() {
-        self.layer.cornerRadius = 5
-        self.layer.maskedCorners = [.layerMinXMinYCorner,.layerMinXMaxYCorner]
+        self.layer.cornerRadius = 15
+        self.layer.maskedCorners = [.layerMaxXMaxYCorner,.layerMaxXMinYCorner]
         self.backgroundColor = .white
-        self.setBackgroundImage(UIImage(named:"backImage"), for: .normal)
-        self.contentMode = .center
-        self.imageView?.contentMode = .scaleAspectFit
+        self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        self.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        self.layer.shadowOpacity = 1.0
+        self.layer.shadowRadius = 10.0
+        self.layer.masksToBounds = false
+        self.setImage(UIImage(named:"backImage"), for: .normal)
     }
     
 }
