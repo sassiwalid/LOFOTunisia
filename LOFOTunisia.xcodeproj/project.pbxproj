@@ -28,6 +28,10 @@
 		A918AEFC242FF81500B6B9B8 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918AEFB242FF81500B6B9B8 /* SignUpResponse.swift */; };
 		A918AF00242FFED400B6B9B8 /* InteractorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918AEFF242FFED400B6B9B8 /* InteractorAssembly.swift */; };
 		A918AF02243000F600B6B9B8 /* UserDataRepositoryNetworkingImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918AF01243000F600B6B9B8 /* UserDataRepositoryNetworkingImplementation.swift */; };
+		A94665EC245F7977001DCEED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A94665EB245F7977001DCEED /* GoogleService-Info.plist */; };
+		A94665EE245F797F001DCEED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A94665ED245F797F001DCEED /* GoogleService-Info.plist */; };
+		A94665F6245F7ACE001DCEED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A94665F5245F7ACE001DCEED /* GoogleService-Info.plist */; };
+		A94665F9245F7B20001DCEED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A94665F8245F7B20001DCEED /* GoogleService-Info.plist */; };
 		A94A1204241E891A006C9F4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1203241E891A006C9F4B /* AppDelegate.swift */; };
 		A94A1206241E891A006C9F4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1205241E891A006C9F4B /* SceneDelegate.swift */; };
 		A94A120E241E891A006C9F4B /* LOFOTunisia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A94A120C241E891A006C9F4B /* LOFOTunisia.xcdatamodeld */; };
@@ -147,6 +151,10 @@
 		A918AEFB242FF81500B6B9B8 /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
 		A918AEFF242FFED400B6B9B8 /* InteractorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorAssembly.swift; sourceTree = "<group>"; };
 		A918AF01243000F600B6B9B8 /* UserDataRepositoryNetworkingImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataRepositoryNetworkingImplementation.swift; sourceTree = "<group>"; };
+		A94665EB245F7977001DCEED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A94665ED245F797F001DCEED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A94665F5245F7ACE001DCEED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A94665F8245F7B20001DCEED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A94A1200241E891A006C9F4B /* LOFOTunisia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOFOTunisia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94A1203241E891A006C9F4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A94A1205241E891A006C9F4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -469,6 +477,49 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		A94665DA245F7046001DCEED /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				A94665F7245F7B09001DCEED /* Stubs */,
+				A94665F4245F7ACE001DCEED /* Prod */,
+				A94665DD245F7066001DCEED /* Pre-Prod */,
+				A94665DC245F705C001DCEED /* Recette */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		A94665DC245F705C001DCEED /* Recette */ = {
+			isa = PBXGroup;
+			children = (
+				A94665ED245F797F001DCEED /* GoogleService-Info.plist */,
+			);
+			path = Recette;
+			sourceTree = "<group>";
+		};
+		A94665DD245F7066001DCEED /* Pre-Prod */ = {
+			isa = PBXGroup;
+			children = (
+				A94665EB245F7977001DCEED /* GoogleService-Info.plist */,
+			);
+			path = "Pre-Prod";
+			sourceTree = "<group>";
+		};
+		A94665F4245F7ACE001DCEED /* Prod */ = {
+			isa = PBXGroup;
+			children = (
+				A94665F5245F7ACE001DCEED /* GoogleService-Info.plist */,
+			);
+			path = Prod;
+			sourceTree = "<group>";
+		};
+		A94665F7245F7B09001DCEED /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				A94665F8245F7B20001DCEED /* GoogleService-Info.plist */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		A94A11F7241E891A006C9F4B = {
 			isa = PBXGroup;
 			children = (
@@ -530,6 +581,7 @@
 		A94A1236241E8D72006C9F4B /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
+				A94665DA245F7046001DCEED /* Firebase */,
 				A94A1214241E891E006C9F4B /* Info.plist */,
 				A94A1237241E8D8F006C9F4B /* Commons Files */,
 			);
@@ -1094,6 +1146,7 @@
 				A98A649C242145210035ED85 /* HomeMapViewController.xib in Resources */,
 				A94A125C241E8E15006C9F4B /* Poppins-ExtraBoldItalic.otf in Resources */,
 				A94A1213241E891E006C9F4B /* LaunchScreen.storyboard in Resources */,
+				A94665EC245F7977001DCEED /* GoogleService-Info.plist in Resources */,
 				A94A124F241E8E15006C9F4B /* Poppins-Light.otf in Resources */,
 				A94A1252241E8E15006C9F4B /* Poppins-MediumItalic.otf in Resources */,
 				A94A125B241E8E15006C9F4B /* Poppins-SemiBoldItalic.otf in Resources */,
@@ -1112,7 +1165,10 @@
 				A9B138AD24311BA100D8AF81 /* colors.plist in Resources */,
 				A94A125E241E8E15006C9F4B /* Poppins-ExtraLight.otf in Resources */,
 				A94A128F241EA4D9006C9F4B /* SignInViewController.xib in Resources */,
+				A94665F9245F7B20001DCEED /* GoogleService-Info.plist in Resources */,
 				A94A1210241E891E006C9F4B /* Assets.xcassets in Resources */,
+				A94665EE245F797F001DCEED /* GoogleService-Info.plist in Resources */,
+				A94665F6245F7ACE001DCEED /* GoogleService-Info.plist in Resources */,
 				A98A64772421420D0035ED85 /* AddLostViewController.xib in Resources */,
 				A94A124D241E8E15006C9F4B /* Poppins-Thin.otf in Resources */,
 				A94A1258241E8E15006C9F4B /* Poppins-BoldItalic.otf in Resources */,

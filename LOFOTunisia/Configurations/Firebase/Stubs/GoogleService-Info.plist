@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>231665596443-6hor1gj1veg4fpfejgcrhlr4ov6ruthi.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.231665596443-6hor1gj1veg4fpfejgcrhlr4ov6ruthi</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAn0l308BhwgS87mNotZi1lamcor4RjB8U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>231665596443</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.LOFOTunisiaStubs</string>
+	<key>PROJECT_ID</key>
+	<string>lofo-c5687</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lofo-c5687.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:231665596443:ios:5f704b35ec82617705a0be</string>
+	<key>DATABASE_URL</key>
+	<string>https://lofo-c5687.firebaseio.com</string>
+</dict>
+</plist>

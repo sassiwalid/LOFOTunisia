@@ -13,6 +13,7 @@ target 'LOFOTunisia' do
     pod 'FBSDKShareKit'
     pod 'FBSDKLoginKit'
     pod 'SwiftLint'
+    pod 'Firebase/Analytics'
   target 'LOFOTunisiaTests' do
     inherit! :search_paths
     # Pods for testing
