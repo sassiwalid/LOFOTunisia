@@ -1,21 +1,24 @@
 stages:
-- lint
-- unit_tests
+  - lint
+  - unit_tests
+  
 before_script:
-- bundle install --path vendor/bundle
-- bundle exec pod install
+  - bundle install --path vendor/bundle
+  - bundle exec pod install
+  
 lint:
-dependencies: []
-stage: lint
-script:
-- fastlane lint
-tags:
-- ios
+  dependencies: []
+  stage: lint
+  script:
+    - fastlane lint
+  tags:
+    - ios
+
 unit_tests:
-dependencies: []
-stage: unit_tests
-script:
-- fastlane test
-tags:
-- ios
+  dependencies: []
+  stage: unit_tests
+  script:
+    - fastlane test
+  tags:
+    - ios
 
