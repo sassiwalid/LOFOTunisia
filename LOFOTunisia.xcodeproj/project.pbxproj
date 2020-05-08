@@ -28,10 +28,6 @@
 		A918AEFC242FF81500B6B9B8 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918AEFB242FF81500B6B9B8 /* SignUpResponse.swift */; };
 		A918AF00242FFED400B6B9B8 /* InteractorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918AEFF242FFED400B6B9B8 /* InteractorAssembly.swift */; };
 		A918AF02243000F600B6B9B8 /* UserDataRepositoryNetworkingImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918AF01243000F600B6B9B8 /* UserDataRepositoryNetworkingImplementation.swift */; };
-		A94665EC245F7977001DCEED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A94665EB245F7977001DCEED /* GoogleService-Info.plist */; };
-		A94665EE245F797F001DCEED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A94665ED245F797F001DCEED /* GoogleService-Info.plist */; };
-		A94665F6245F7ACE001DCEED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A94665F5245F7ACE001DCEED /* GoogleService-Info.plist */; };
-		A94665F9245F7B20001DCEED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A94665F8245F7B20001DCEED /* GoogleService-Info.plist */; };
 		A94A1204241E891A006C9F4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1203241E891A006C9F4B /* AppDelegate.swift */; };
 		A94A1206241E891A006C9F4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1205241E891A006C9F4B /* SceneDelegate.swift */; };
 		A94A120E241E891A006C9F4B /* LOFOTunisia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A94A120C241E891A006C9F4B /* LOFOTunisia.xcdatamodeld */; };
@@ -206,8 +202,6 @@
 		A966A37B243A3E2A00364313 /* LoginInteractorImpFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractorImpFake.swift; sourceTree = "<group>"; };
 		A966A37F243A58CA00364313 /* SocialMedias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMedias.swift; sourceTree = "<group>"; };
 		A977F99E241FE53100CDDF19 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
-		A982A847245E21E500800021 /* LOFOTunisiaPre-Production.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LOFOTunisiaPre-Production.entitlements"; sourceTree = "<group>"; };
-		A982A848245E21FD00800021 /* LOFOTunisia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LOFOTunisia.entitlements; sourceTree = "<group>"; };
 		A98A64742421420D0035ED85 /* AddLostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLostViewController.swift; sourceTree = "<group>"; };
 		A98A64752421420D0035ED85 /* AddLostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddLostViewController.xib; sourceTree = "<group>"; };
 		A98A647A242142560035ED85 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
@@ -545,8 +539,6 @@
 		A94A1202241E891A006C9F4B /* LOFOTunisia */ = {
 			isa = PBXGroup;
 			children = (
-				A982A848245E21FD00800021 /* LOFOTunisia.entitlements */,
-				A982A847245E21E500800021 /* LOFOTunisiaPre-Production.entitlements */,
 				A918AEC7242FDD6E00B6B9B8 /* Coordinators */,
 				A918AEC6242FDD5F00B6B9B8 /* Data */,
 				A918AEC5242FDD5600B6B9B8 /* DI */,
@@ -1039,6 +1031,7 @@
 				A94A11FE241E891A006C9F4B /* Resources */,
 				B58F5EB0EA47293BD85F9ADD /* [CP] Embed Pods Frameworks */,
 				A982A849245E22C500800021 /* Swift Lint */,
+				A9870A60246583A000A63AF4 /* Run Firebase Multiple config */,
 			);
 			buildRules = (
 			);
@@ -1146,7 +1139,6 @@
 				A98A649C242145210035ED85 /* HomeMapViewController.xib in Resources */,
 				A94A125C241E8E15006C9F4B /* Poppins-ExtraBoldItalic.otf in Resources */,
 				A94A1213241E891E006C9F4B /* LaunchScreen.storyboard in Resources */,
-				A94665EC245F7977001DCEED /* GoogleService-Info.plist in Resources */,
 				A94A124F241E8E15006C9F4B /* Poppins-Light.otf in Resources */,
 				A94A1252241E8E15006C9F4B /* Poppins-MediumItalic.otf in Resources */,
 				A94A125B241E8E15006C9F4B /* Poppins-SemiBoldItalic.otf in Resources */,
@@ -1165,10 +1157,7 @@
 				A9B138AD24311BA100D8AF81 /* colors.plist in Resources */,
 				A94A125E241E8E15006C9F4B /* Poppins-ExtraLight.otf in Resources */,
 				A94A128F241EA4D9006C9F4B /* SignInViewController.xib in Resources */,
-				A94665F9245F7B20001DCEED /* GoogleService-Info.plist in Resources */,
 				A94A1210241E891E006C9F4B /* Assets.xcassets in Resources */,
-				A94665EE245F797F001DCEED /* GoogleService-Info.plist in Resources */,
-				A94665F6245F7ACE001DCEED /* GoogleService-Info.plist in Resources */,
 				A98A64772421420D0035ED85 /* AddLostViewController.xib in Resources */,
 				A94A124D241E8E15006C9F4B /* Poppins-Thin.otf in Resources */,
 				A94A1258241E8E15006C9F4B /* Poppins-BoldItalic.otf in Resources */,
@@ -1288,6 +1277,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		A9870A60246583A000A63AF4 /* Run Firebase Multiple config */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Firebase Multiple config";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Name of the resource we're selectively copying\nGOOGLESERVICE_INFO_PLIST=GoogleService-Info.plist\n\n# Get references to dev and prod versions of the GoogleService-Info.plist\n# NOTE: These should only live on the file system and should NOT be part of the target (since we'll be adding them to the target manually)\nGOOGLESERVICE_INFO_STUBS=${PROJECT_DIR}/${TARGET_NAME}/Configurations/Firebase/Stubs/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO_RECETTE=${PROJECT_DIR}/${TARGET_NAME}/Configurations/Firebase/Recette/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO_PREPROD=${PROJECT_DIR}/${TARGET_NAME}/Configurations/Firebase/Pre-Prod/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO_PROD=${PROJECT_DIR}/${TARGET_NAME}/Configurations/Firebase/Prod/${GOOGLESERVICE_INFO_PLIST}\n\n# Make sure the dev version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_STUBS}\"\nif [ ! -f $GOOGLESERVICE_INFO_STUBS ]\nthen\n    echo \"No Development GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\n    exit 1\nfi\n# Make sure the recette version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_RECETTE}\"\nif [ ! -f $GOOGLESERVICE_INFO_RECETTE ]\nthen\n    echo \"No Recette GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\n    exit 1\nfi\n# Make sure the pre-prod version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_PREPROD}\"\nif [ ! -f $GOOGLESERVICE_INFO_PREPROD ]\nthen\n    echo \"No PreProd GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\n    exit 1\nfi\n# Make sure the prod version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_PROD}\"\nif [ ! -f $GOOGLESERVICE_INFO_PROD ]\nthen\n    echo \"No Production GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\n    exit 1\nfi\n\n# Get a reference to the destination location for the GoogleService-Info.plist\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Will copy ${GOOGLESERVICE_INFO_PLIST} to final destination: ${PLIST_DESTINATION}\"\n\n# Copy over the prod GoogleService-Info.plist for Release builds\nif [ \"${CONFIGURATION}\" == \"Production\" ]\nthen\n    echo \"Using ${GOOGLESERVICE_INFO_PROD}\"\n    cp \"${GOOGLESERVICE_INFO_PROD}\" \"${PLIST_DESTINATION}\"\nelif [ \"${CONFIGURATION}\" == \"Recette\" ]\nthen\n    echo \"Using ${GOOGLESERVICE_INFO_RECETTE}\"\n    cp \"${GOOGLESERVICE_INFO_RECETTE}\" \"${PLIST_DESTINATION}\"\nelif [ \"${CONFIGURATION}\" == \"Pre-Production\" ]\nthen\n    echo \"Using ${GOOGLESERVICE_INFO_PREPROD}\"\n    cp \"${GOOGLESERVICE_INFO_PREPROD}\" \"${PLIST_DESTINATION}\"\nelse\n    echo \"Using ${GOOGLESERVICE_INFO_STUBS}\"\n    cp \"${GOOGLESERVICE_INFO_STUBS}\" \"${PLIST_DESTINATION}\"\nfi\n";
 		};
 		B58F5EB0EA47293BD85F9ADD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1563,7 +1570,7 @@
 			baseConfigurationReference = F4766F5F409C6E8EE9779F75 /* Pods-LOFOTunisia.stubs.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LOFOTunisia/LOFOTunisia.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3X72U4HH78;
 				INFOPLIST_FILE = "$(SRCROOT)/LOFOTunisia/Configurations/Info.plist";
@@ -1583,7 +1590,7 @@
 			baseConfigurationReference = 668DC2DBF62E76FCAA6349BB /* Pods-LOFOTunisia.production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LOFOTunisia/LOFOTunisia.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3X72U4HH78;
 				ENABLE_TESTABILITY = YES;
@@ -1753,7 +1760,7 @@
 			baseConfigurationReference = DAE0CCA5490A0FC19EEED1E8 /* Pods-LOFOTunisia.recette.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LOFOTunisia/LOFOTunisia.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3X72U4HH78;
 				INFOPLIST_FILE = "$(SRCROOT)/LOFOTunisia/Configurations/Info.plist";
@@ -1872,7 +1879,7 @@
 			baseConfigurationReference = 43FA7DF8389924A29815CD9B /* Pods-LOFOTunisia.pre-production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "LOFOTunisia/LOFOTunisiaPre-Production.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3X72U4HH78;
 				ENABLE_TESTABILITY = YES;
