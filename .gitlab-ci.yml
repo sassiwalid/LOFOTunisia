@@ -1,10 +1,7 @@
 stages:
   - unit_tests
   - lint
-  
-variables:
-  CI_DEBUG_TRACE: "true"
-  
+
 before_script:
   - bundle install
   - bundle exec pod install
