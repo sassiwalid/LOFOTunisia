@@ -1,6 +1,7 @@
 stages:
-  - lint
   - unit_tests
+  - lint
+  
 variables:
   CI_DEBUG_TRACE: "true"
   
