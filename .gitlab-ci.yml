@@ -5,16 +5,16 @@ variables:
   CI_DEBUG_TRACE: "true"
   
 before_script:
-  - bundle install --path vendor/bundle
+  - bundle install
   - bundle exec pod install
 
 unit_tests:
-dependencies: []
-stage: unit_tests
-script:
-  - fastlane test
-tags:
-  - ios
+  dependencies: []
+  stage: unit_tests
+  script:
+    - fastlane test
+  tags:
+    - ios
   
 lint:
   dependencies: []
