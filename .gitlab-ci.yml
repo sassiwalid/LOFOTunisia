@@ -1,6 +1,6 @@
 stages:
-  - lint
   - unit_tests
+  - lint
 
 before_script:
   - bundle install
