@@ -9,12 +9,12 @@ before_script:
   - bundle exec pod install
 
 unit_tests:
-dependencies: []
-stage: unit_tests
-script:
-  - fastlane test
-tags:
-  - ios
+  dependencies: []
+  stage: unit_tests
+  script:
+    - fastlane test
+  tags:
+    - ios
   
 lint:
   dependencies: []
