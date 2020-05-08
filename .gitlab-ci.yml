@@ -7,6 +7,14 @@ variables:
 before_script:
   - bundle install --path vendor/bundle
   - bundle exec pod install
+
+unit_tests:
+dependencies: []
+stage: unit_tests
+script:
+  - fastlane test
+tags:
+  - ios
   
 lint:
   dependencies: []
@@ -15,12 +23,3 @@ lint:
     - fastlane lint
   tags:
     - ios
-
-unit_tests:
-  dependencies: []
-  stage: unit_tests
-  script:
-    - fastlane test
-  tags:
-    - ios
-
