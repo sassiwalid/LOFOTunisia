@@ -4,6 +4,7 @@ stages:
 
 before_script:
   - bundle install
+  - bundle update
   - bundle exec pod install
 
 unit_tests:
