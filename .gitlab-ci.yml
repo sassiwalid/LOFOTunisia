@@ -3,8 +3,8 @@ stages:
   - unit_tests
 
 before_script:
-  - sudo bundle install
-  - sudo bundle exec pod install
+  - bundle install
+  - bundle exec pod install
 
 unit_tests:
   dependencies: []
