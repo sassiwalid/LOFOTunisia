@@ -3,7 +3,9 @@ stages:
   - unit_tests
 
 before_script:
-  - gem install bundler
+  - ruby -v
+  - which ruby
+  - gem install bundler --no-ri --no-rdoc
   - bundle install
   - bundle exec pod install
 
