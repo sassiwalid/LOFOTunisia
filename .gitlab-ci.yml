@@ -3,10 +3,8 @@ stages:
   - unit_tests
 
 before_script:
-  - sudo gem install CFPropertyList -v '3.0.2' --source 'https://rubygems.org/'
-  - bundle install
-  - rm Gemfile.lock
   - bundle update --all
+  - bundle install
   - bundle exec pod install
 
 unit_tests:
