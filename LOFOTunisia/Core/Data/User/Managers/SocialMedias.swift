@@ -15,15 +15,13 @@ class SocialMedias {
     let manager = LoginManager()
     init() {
     }
-    func fbLogin( oncompletion: @escaping(String?,Error?) -> Void){
+    func fbLogin( oncompletion: @escaping(String?,Error?) -> Void) {
         manager.logIn(permissions: [], from: nil) {(result, error) in
             guard error == nil else {
                 oncompletion(nil,error)
                 return
             }
             oncompletion(result?.token?.tokenString, nil)
-            
         }
     }
 }
-
