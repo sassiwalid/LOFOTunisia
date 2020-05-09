@@ -33,6 +33,7 @@
 		A943E9332466F94E00276E7A /* Tagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A943E9322466F94E00276E7A /* Tagger.swift */; };
 		A943E9352466FE9300276E7A /* FirebaseTagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A943E9342466FE9300276E7A /* FirebaseTagger.swift */; };
 		A943E9372467002A00276E7A /* FirebaseEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A943E9362467002A00276E7A /* FirebaseEnums.swift */; };
+		A943E93924670F0F00276E7A /* HelperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A943E93824670F0F00276E7A /* HelperAssembly.swift */; };
 		A94A1204241E891A006C9F4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1203241E891A006C9F4B /* AppDelegate.swift */; };
 		A94A1206241E891A006C9F4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A1205241E891A006C9F4B /* SceneDelegate.swift */; };
 		A94A120E241E891A006C9F4B /* LOFOTunisia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A94A120C241E891A006C9F4B /* LOFOTunisia.xcdatamodeld */; };
@@ -157,6 +158,7 @@
 		A943E9322466F94E00276E7A /* Tagger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tagger.swift; sourceTree = "<group>"; };
 		A943E9342466FE9300276E7A /* FirebaseTagger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTagger.swift; sourceTree = "<group>"; };
 		A943E9362467002A00276E7A /* FirebaseEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseEnums.swift; sourceTree = "<group>"; };
+		A943E93824670F0F00276E7A /* HelperAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperAssembly.swift; sourceTree = "<group>"; };
 		A94665EB245F7977001DCEED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A94665ED245F797F001DCEED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A94665F5245F7ACE001DCEED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 				A918AED5242FE6C400B6B9B8 /* PresenterAssembly.swift */,
 				A918AED7242FE6C400B6B9B8 /* RepositoryAssembly.swift */,
 				A918AEFF242FFED400B6B9B8 /* InteractorAssembly.swift */,
+				A943E93824670F0F00276E7A /* HelperAssembly.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -1376,6 +1379,7 @@
 				A918AEE0242FE74500B6B9B8 /* SignUpPresenterImplementation.swift in Sources */,
 				A918AEED242FF39A00B6B9B8 /* LoginInteractor.swift in Sources */,
 				A918AEF4242FF46200B6B9B8 /* SignUpInteractorImplementation.swift in Sources */,
+				A943E93924670F0F00276E7A /* HelperAssembly.swift in Sources */,
 				A943E9332466F94E00276E7A /* Tagger.swift in Sources */,
 				A94A128E241EA4D9006C9F4B /* SignInViewController.swift in Sources */,
 				A966A380243A58CA00364313 /* SocialMedias.swift in Sources */,

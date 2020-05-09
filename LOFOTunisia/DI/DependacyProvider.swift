@@ -16,7 +16,7 @@ public class DependacyProvider {
     /// Instanciate all Assembly
     init() {
         // you should begin by  the most down dependacies instanciation
-        assembler = Assembler([RepositoryAssembly(),IntercatorAssembly(),PresenterAssembly()],container:container)
+        assembler = Assembler([HelperAssembly(),RepositoryAssembly(),IntercatorAssembly(),PresenterAssembly()],container:container)
     }
     /// instanciate login Presenter and his dependencies
     /// arguments are instances delivred to the presenter without resolve them.

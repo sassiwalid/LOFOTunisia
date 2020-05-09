@@ -12,13 +12,18 @@ public class SignInPresenterProtocolImplementation :SignInPresenterProtocol{
    
     
     let viewContract: SignInViewContract?
-    weak var signInInteractor:LoginInteractor?
+    weak var signInInteractor: LoginInteractor?
     var request: LoginRequest?
     var delegate: LoginPresenterDelegate?
-    init(viewContract: SignInViewContract, intercator:LoginInteractor, delegate: LoginPresenterDelegate) {
+    var tagger: Tagger?
+    init(viewContract: SignInViewContract,
+         intercator:LoginInteractor,
+         delegate: LoginPresenterDelegate,
+         tagger: Tagger) {
         self.viewContract = viewContract
         self.signInInteractor = intercator
         self.delegate = delegate
+        self.tagger = tagger
     }
     /// Check if user exist, if ok pass to the dashboard view
     /// - Parameters:
@@ -26,6 +31,7 @@ public class SignInPresenterProtocolImplementation :SignInPresenterProtocol{
     ///   - password: user password
     func didTapLoginButton(login: String, password: String) {
          viewContract?.showLoading()
+        tagger?.tagFBConnexionTouch()
         request = LoginRequest(login: login, password: password)
         signInInteractor?.execute(request!, completion: { [weak self] response in
             guard let strongSelf = self else {
@@ -42,14 +48,14 @@ public class SignInPresenterProtocolImplementation :SignInPresenterProtocol{
     func didTapCreateUser() {
         delegate?.loginPresenterDelegateDidTappedAddUser()
     }
-    
+
     /// Should FB API and Return Token when user is authentificated successfully
     func didTapFBButton() {
         signInInteractor?.execute(completion: { [weak self] response in
             guard let self = self else {
                 return
             }
-            guard let myResponse = response else{
+            guard let _ = response else {
                 self.viewContract?.displayError()
                 return
             }
@@ -64,7 +70,7 @@ public class SignInPresenterProtocolImplementation :SignInPresenterProtocol{
             }
         })
     }
-    
+
     func didTapGmailButton() {
     }
 }

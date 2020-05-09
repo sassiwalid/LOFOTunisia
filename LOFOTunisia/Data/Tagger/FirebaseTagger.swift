@@ -18,6 +18,9 @@ class FirebaseTagger: Tagger {
     func tag(name:ScreenTagName, category: ScreenTagCategory) {
         Analytics.setScreenName(name.rawValue, screenClass: category.rawValue)
     }
+    func tagConnexionTouch() {
+        tag(category: .login, action: .login, label: "connexion")
+    }
     func tagSplash() {}
     func tagConnexionScreen() {}
     func tagFBConnexionTouch() {

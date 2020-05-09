@@ -18,12 +18,17 @@ public class PresenterAssembly: Assembly {
          // register loginPresenterProtocol in container
          container.register(SignInPresenterProtocol.self) { resolver,viewContract,delegate in
             // Instancier l'implémentation du protocol
-            SignInPresenterProtocolImplementation(viewContract: viewContract, intercator: resolver.resolve(LoginInteractor.self)!, delegate: delegate)
+            SignInPresenterProtocolImplementation(
+                viewContract: viewContract,
+                intercator: resolver.resolve(LoginInteractor.self)!,
+                delegate: delegate, tagger: resolver.resolve(Tagger.self)!)
                }.inObjectScope(.container)
         // register signupPresenterProtocol
         container.register(SignUpPresenterProtocol.self) { resolver,viewContract,delegate in
             // Instancier l'implémentation du protocol
-            SignUpPresenterImplementation(viewContract: viewContract, signUpInteractor: resolver.resolve(SignUpInteractor.self)!, delegate: delegate)
+            SignUpPresenterImplementation(
+                viewContract: viewContract,
+                signUpInteractor:resolver.resolve(SignUpInteractor.self)!,delegate: delegate)
         }.inObjectScope(.container)
     }
 }

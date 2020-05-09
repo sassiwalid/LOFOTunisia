@@ -16,6 +16,7 @@ protocol EventTagger {
     func tagConnexionScreen()
     func tagFBConnexionTouch()
     func tagConnexionSuccess()
+    func tagConnexionTouch()
     func tagSubscriptionSuccess()
 }
 typealias Tagger = EventTagger & ScreenTagger

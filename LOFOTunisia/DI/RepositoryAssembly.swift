@@ -20,6 +20,4 @@ public class RepositoryAssembly: Assembly {
             SignUpUserRepositoryNetworkingImplementation()
         }
     }
-    
-    
 }
