@@ -3,6 +3,7 @@ stages:
   - unit_tests
 
 before_script:
+  - gem install bundler
   - bundle install
   - bundle exec pod install
 
