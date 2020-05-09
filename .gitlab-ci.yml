@@ -5,7 +5,7 @@ stages:
 before_script:
   - ruby -v
   - which ruby
-  - gem install bundler --no-ri --no-rdoc
+  - sudo gem install bundler --no-ri --no-rdoc
   - bundle install
   - bundle exec pod install
 
