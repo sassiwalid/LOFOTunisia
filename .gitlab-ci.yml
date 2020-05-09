@@ -3,6 +3,7 @@ stages:
   - unit_tests
 
 before_script:
+  - bundle install --path vendor/bundle
   - bundle exec pod install
 
 unit_tests:
