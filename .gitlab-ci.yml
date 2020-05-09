@@ -4,6 +4,8 @@ stages:
 
 before_script:
   - bundle install
+  - rm Gemfile.lock
+  - bundle update --all
   - bundle exec pod install
 
 unit_tests:
