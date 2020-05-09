@@ -3,6 +3,7 @@ stages:
   - unit_tests
 
 before_script:
+  - gem install CFPropertyList -v '3.0.2' --source 'https://rubygems.org/'
   - bundle install
   - rm Gemfile.lock
   - bundle update --all
