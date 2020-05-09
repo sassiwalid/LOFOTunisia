@@ -1,6 +1,6 @@
 # Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '11.0'
-
 target 'LOFOTunisia' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
@@ -14,7 +14,9 @@ target 'LOFOTunisia' do
     pod 'FBSDKLoginKit'
     pod 'SwiftLint'
     pod 'Firebase/Analytics'
-  target 'LOFOTunisiaTests' do
+    pod 'Firebase/Core'
+    pod 'Firebase/RemoteConfig'
+    target 'LOFOTunisiaTests' do
     inherit! :search_paths
     # Pods for testing
     pod 'Quick'

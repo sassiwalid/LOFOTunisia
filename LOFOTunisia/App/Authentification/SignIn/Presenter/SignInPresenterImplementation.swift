@@ -51,6 +51,7 @@ public class SignInPresenterProtocolImplementation :SignInPresenterProtocol{
 
     /// Should FB API and Return Token when user is authentificated successfully
     func didTapFBButton() {
+        tagger?.tagFBConnexionTouch()
         signInInteractor?.execute(completion: { [weak self] response in
             guard let self = self else {
                 return
