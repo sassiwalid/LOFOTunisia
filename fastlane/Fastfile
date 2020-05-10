@@ -29,13 +29,12 @@ platform :ios do
   end
   desc "build the project"
   lane :build do
-     build_app(
-     workspace: "LOFOTunisia",
+     gym(
+     workspace: "LOFOTunisia.xcworkspace",
      configuration: "Stubs",
      skip_package_ipa: true,
      include_bitcode: true,
      skip_archive: true,
-     skip_package_pkg: true,
      silent: true,
      clean: true
   )
