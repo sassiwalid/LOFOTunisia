@@ -27,6 +27,6 @@ build:
   dependencies: []
   stage: build
   script:
-    - fatslane build
+    - fastlane build
   tags:
     - ios
