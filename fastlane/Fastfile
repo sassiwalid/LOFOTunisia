@@ -28,7 +28,7 @@ platform :ios do
      )
   end
   desc "build the project"
-  lane : build do
+  lane :build do
      build_app(
      workspace: "LOFOTunisia",
      configuration: "Stubs",
