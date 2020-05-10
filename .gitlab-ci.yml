@@ -1,4 +1,5 @@
 stages:
+  - build
   - lint
   - unit_tests
 
@@ -19,5 +20,13 @@ lint:
   stage: lint
   script:
     - fastlane lint
+  tags:
+    - ios
+
+build:
+  dependencies: []
+  stage: build
+  script:
+    - fatslane build
   tags:
     - ios

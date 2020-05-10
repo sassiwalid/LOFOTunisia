@@ -27,8 +27,23 @@ platform :ios do
      ignore_exit_status: true
      )
   end
+  desc "build the project"
+  lane : build do
+     build_app(
+     workspace: "LOFOTunisia",
+     configuration: "Stubs",
+     skip_package_ipa: true,
+     include_bitcode: true,
+     skip_archive: true,
+     skip_package_pkg: true,
+     silent: true,
+     clean: true
+  )
+  end
   desc "Test an measure code coverage"
   lane :test do
-    run_tests(devices: ["iPhone 8"])
+    run_tests(devices: ["iPhone 8"],
+    slack_url: "https://hooks.slack.com/services/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",
+    slack_channel: "#lofo-qa")
   end
 end
