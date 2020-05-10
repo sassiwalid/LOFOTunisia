@@ -33,10 +33,12 @@ platform :ios do
      workspace: "LOFOTunisia.xcworkspace",
      configuration: "Stubs",
      skip_package_ipa: true,
-     include_bitcode: true,
-     skip_archive: true,
-     silent: true,
-     clean: true
+     export_options: {
+        method: “Development”,
+        clean: true,
+        compileBitcode: true,
+        uploadBitcode: true,
+      }
   )
   end
   desc "Test an measure code coverage"
