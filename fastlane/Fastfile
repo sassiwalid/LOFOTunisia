@@ -43,7 +43,7 @@ platform :ios do
   end
   desc "Test an measure code coverage"
   lane :test do
-    run_tests(devices: ["iPhone 8"],
+    scan(devices: ["iPhone 8"],
     slack_url: "https://hooks.slack.com/services/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",
     slack_channel: "#lofo-qa")
   end
