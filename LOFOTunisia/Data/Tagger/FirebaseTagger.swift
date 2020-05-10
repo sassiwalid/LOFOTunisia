@@ -28,6 +28,9 @@ class FirebaseTagger: Tagger {
     }
     func tagConnexionSuccess() {}
     func tagSubscriptionSuccess() {}
+    func tagSignupTouch() {
+        tag(category: .login, action: .subscribe, label: "ouvririnscription")
+    }
     private func tag(category:FirebaseCategory, action: FirebaseAction, label: String? = nil) {
         tag(category: category, action: action.rawValue, label: label)
     }

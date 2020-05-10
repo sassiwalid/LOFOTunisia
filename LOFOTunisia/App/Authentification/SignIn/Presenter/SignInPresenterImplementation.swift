@@ -39,6 +39,7 @@ public class SignInPresenterProtocolImplementation :SignInPresenterProtocol{
             }
             switch response.shouldPresentDashBoard {
             case true:
+                strongSelf.tagger?.tagConnexionSuccess()
                 strongSelf.viewContract?.displaySuccess()
                 strongSelf.delegate?.openDashboard()
             case false: strongSelf.viewContract?.displayError()
@@ -46,6 +47,7 @@ public class SignInPresenterProtocolImplementation :SignInPresenterProtocol{
         })
     }
     func didTapCreateUser() {
+        tagger?.tagSignupTouch()
         delegate?.loginPresenterDelegateDidTappedAddUser()
     }
 

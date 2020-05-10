@@ -21,16 +21,14 @@ class LoginCoordinator: Coordinator, LoginPresenterDelegate {
         loginVC.presenter = DependacyProvider.shared.loginPresenter(viewContract: loginVC, delegate: self)
         navigation.pushViewController(loginVC, animated: true)
     }
-    
+
     /// Instanciate SignUp Coordinator and add it as a child
     func loginPresenterDelegateDidTappedAddUser() {
         let signUpCoordinator = SignUpCoordinator()
         addChild(signUpCoordinator)
         signUpCoordinator.displaySignUpVC(navigation: self.navigation!, coordinator: self)
     }
-    func openDashboard() {
-          
-    }
+    func openDashboard() {}
     func didBackFromCreateUserView() {
         self.navigation?.popViewController(animated: true)
         self.removeAllChildren()

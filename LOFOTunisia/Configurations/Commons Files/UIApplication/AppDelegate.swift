@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()
+        Analytics.setAnalyticsCollectionEnabled(true)
         return true
     }
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
