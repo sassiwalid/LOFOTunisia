@@ -118,6 +118,27 @@
 			remoteGlobalIDString = A94A11FF241E891A006C9F4B;
 			remoteInfo = LOFOTunisia;
 		};
+		A9F36AC82471F1130009DD44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9F36AC32471F1130009DD44 /* RemoteConfig.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9F36AA92471F0A10009DD44;
+			remoteInfo = RemoteConfig;
+		};
+		A9F36ACA2471F1130009DD44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9F36AC32471F1130009DD44 /* RemoteConfig.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9F36AB22471F0A20009DD44;
+			remoteInfo = RemoteConfigTests;
+		};
+		A9F36ACC2471F1250009DD44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9F36AC32471F1130009DD44 /* RemoteConfig.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A9F36AA82471F0A10009DD44;
+			remoteInfo = RemoteConfig;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -237,6 +258,7 @@
 		A9B138A52430B25600D8AF81 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		A9B138AA2431184000D8AF81 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B138AC24311BA100D8AF81 /* colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors.plist; sourceTree = "<group>"; };
+		A9F36AC32471F1130009DD44 /* RemoteConfig.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RemoteConfig.xcodeproj; path = RemoteConfig/RemoteConfig.xcodeproj; sourceTree = "<group>"; };
 		C466DC283E0105D727188C8A /* Pods-LOFOTunisiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.release.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.release.xcconfig"; sourceTree = "<group>"; };
 		C7002F818DE318A24B3C0801 /* Pods-LOFOTunisia-LOFOTunisiaUITests.recette.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisia-LOFOTunisiaUITests.recette.xcconfig"; path = "Target Support Files/Pods-LOFOTunisia-LOFOTunisiaUITests/Pods-LOFOTunisia-LOFOTunisiaUITests.recette.xcconfig"; sourceTree = "<group>"; };
 		D0FFCFFF160134F31A2BC169 /* Pods-LOFOTunisiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOFOTunisiaTests.debug.xcconfig"; path = "Target Support Files/Pods-LOFOTunisiaTests/Pods-LOFOTunisiaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -543,6 +565,7 @@
 		A94A11F7241E891A006C9F4B = {
 			isa = PBXGroup;
 			children = (
+				A9F36AC32471F1130009DD44 /* RemoteConfig.xcodeproj */,
 				A94A1202241E891A006C9F4B /* LOFOTunisia */,
 				A94A121C241E891E006C9F4B /* LOFOTunisiaTests */,
 				A94A1227241E891E006C9F4B /* LOFOTunisiaUITests */,
@@ -1019,6 +1042,15 @@
 			path = SignUpTests;
 			sourceTree = "<group>";
 		};
+		A9F36AC42471F1130009DD44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9F36AC92471F1130009DD44 /* RemoteConfig.framework */,
+				A9F36ACB2471F1130009DD44 /* RemoteConfigTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E3C1F7E076DB7738CA272914 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1062,6 +1094,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A9F36ACD2471F1250009DD44 /* PBXTargetDependency */,
 			);
 			name = LOFOTunisia;
 			productName = LOFOTunisia;
@@ -1143,6 +1176,12 @@
 			mainGroup = A94A11F7241E891A006C9F4B;
 			productRefGroup = A94A1201241E891A006C9F4B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A9F36AC42471F1130009DD44 /* Products */;
+					ProjectRef = A9F36AC32471F1130009DD44 /* RemoteConfig.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A94A11FF241E891A006C9F4B /* LOFOTunisia */,
@@ -1151,6 +1190,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A9F36AC92471F1130009DD44 /* RemoteConfig.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RemoteConfig.framework;
+			remoteRef = A9F36AC82471F1130009DD44 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9F36ACB2471F1130009DD44 /* RemoteConfigTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RemoteConfigTests.xctest;
+			remoteRef = A9F36ACA2471F1130009DD44 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A94A11FE241E891A006C9F4B /* Resources */ = {
@@ -1456,6 +1512,11 @@
 			isa = PBXTargetDependency;
 			target = A94A11FF241E891A006C9F4B /* LOFOTunisia */;
 			targetProxy = A94A1225241E891E006C9F4B /* PBXContainerItemProxy */;
+		};
+		A9F36ACD2471F1250009DD44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RemoteConfig;
+			targetProxy = A9F36ACC2471F1250009DD44 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
