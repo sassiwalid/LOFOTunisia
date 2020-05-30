@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol LoginPresenter {
+protocol SignInPresenterProtocol {
     func didTapLoginButton(login:String, password:String)
     func didTapCreateUser()
     func didTapFBButton()

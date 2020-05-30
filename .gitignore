@@ -6,8 +6,7 @@
 Pods/
 docs/
 vendor/
-build/
-builds/
+Build
 xcschememanagement.plist
 ModuleCache.noindex
 UserInterfaceState.xcuserstate
@@ -15,8 +14,5 @@ UserInterfaceState.xcuserstate
 # ignore all userdata
 *xcuserdatad*
 *xcshareddata*
-# ignore some specific temp files
 *.lock
 *BACKUP*
-*gitlab-ci_*
-*.orig

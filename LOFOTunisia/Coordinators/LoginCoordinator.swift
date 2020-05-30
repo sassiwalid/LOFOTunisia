@@ -14,7 +14,7 @@ class LoginCoordinator: Coordinator, LoginPresenterDelegate {
     /// show Login View Controller
     /// - Parameter navigation: navigation Controller
     func displayLoginVC(navigation: UINavigationController) {
-        let loginVC = LoginViewController(nibName: "SignInViewController", bundle: nil)
+        let loginVC = SignInViewController(nibName: "SignInViewController", bundle: nil)
         self.navigation = navigation
         navigation.isNavigationBarHidden = true
         // instanciate presenter using DI

@@ -7,8 +7,7 @@
 //
 
 import UIKit
-class LoginViewController: UIViewController, LoginViewContract {
-
+class SignInViewController: UIViewController {
     // MARK: - Outlets
 
     @IBOutlet var signInFindObj2Label: UILabel!
@@ -20,42 +19,23 @@ class LoginViewController: UIViewController, LoginViewContract {
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var signUpLabel: UILabel!
     @IBOutlet weak var checkUserActivityIndicator: UIActivityIndicatorView!
-
+    
     // MARK: - Variables
-    var presenter:LoginPresenter?
-
+    var presenter:SignInPresenterProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
         addTapGesture()
         setupColors()
         // Do any additional setup after loading the view.
     }
-
-    // MARK: - Private
-
-    private func addTapGesture() {
+    private func addTapGesture(){
         let tapgesture = UITapGestureRecognizer(target: self, action: #selector(self.didTapSignUPLabel(_:)))
         signUpLabel.addGestureRecognizer(tapgesture)
         signUpLabel.isUserInteractionEnabled = true
     }
-
-    @objc private func didTapSignUPLabel(_ sender: UITapGestureRecognizer) {
+    @objc private func didTapSignUPLabel(_ sender: UITapGestureRecognizer){
         presenter?.didTapCreateUser()
     }
-    private func setupColors() {
-        self.view.backgroundColor = UIColor.primaryColor()
-        fbButton.backgroundColor = UIColor.fbButtonColor()
-        gmailButton.layer.borderColor = UIColor.gmailButtonBorderColor()
-        signInButton.backgroundColor = UIColor.signInButtonColor()
-        emailTextField.textColor = UIColor.black
-        passwordTextField.textColor = UIColor.black
-        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email",
-        attributes: [NSAttributedString.Key.foregroundColor: UIColor.emailTextColor()])
-        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Mot de passe",
-        attributes: [NSAttributedString.Key.foregroundColor: UIColor.passwordTextColor()])
-    }
-
-    // MARK: - Actions
 
     @IBAction func signInButtonClicked(_ sender: Any) {
         if let email = emailTextField.text, let password = passwordTextField.text {
@@ -69,22 +49,37 @@ class LoginViewController: UIViewController, LoginViewContract {
     @IBAction func gmailButtonClicked(_ sender: Any) {
         presenter?.didTapGmailButton()
     }
+    /// setup IBOutlets colors
+    func setupColors() {
+        self.view.backgroundColor = UIColor.primaryColor()
+        fbButton.backgroundColor = UIColor.fbButtonColor()
+        gmailButton.layer.borderColor = UIColor.gmailButtonBorderColor()
+        signInButton.backgroundColor = UIColor.signInButtonColor()
+        emailTextField.textColor = UIColor.black
+        passwordTextField.textColor = UIColor.black
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email",
+        attributes: [NSAttributedString.Key.foregroundColor: UIColor.emailTextColor()])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Mot de passe",
+        attributes: [NSAttributedString.Key.foregroundColor: UIColor.passwordTextColor()])
+    }
 
-    // MARK: - LoginViewContract
+}
 
+extension SignInViewController:SignInViewContract {
     func enableCreateButton(_ status: Bool) {
         signInButton.isEnabled = status
     }
-
+    
     func showLoading() {
     }
-
+    
     func hideLoading() {
     }
-
+    
     func displayError() {
     }
-
+    
     func displaySuccess() {
     }
+    
 }

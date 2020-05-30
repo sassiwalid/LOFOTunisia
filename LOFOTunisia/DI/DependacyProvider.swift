@@ -25,18 +25,18 @@ public class DependacyProvider {
     ///   - viewContract: loginViewController instance delegate
     ///   - delegate: LoginCoordinator instance delegate
     /// - Returns:
-    func loginPresenter(viewContract:LoginViewContract, delegate:LoginPresenterDelegate) -> LoginPresenter? {
+    func loginPresenter(viewContract:SignInViewContract, delegate:LoginPresenterDelegate) -> SignInPresenterProtocol? {
         return assembler
         .resolver
-        .resolve(LoginPresenter.self, arguments:viewContract,delegate)
+        .resolve(SignInPresenterProtocol.self, arguments:viewContract,delegate)
     }
     /// instanciate SignUp Presenter and his dependencies
     /// - Parameters:
     ///   - viewContract: SignUpViewController instance delegate
     ///   - delegate: LoginCoordinator instance delegate
-    func signUpPresenter(viewContract:SignUpViewContract, delegate:LoginPresenterDelegate) -> SignUpPresenter? {
+    func signUpPresenter(viewContract:SignUpViewContract, delegate:LoginPresenterDelegate) -> SignUpPresenterProtocol? {
         return assembler
         .resolver
-        .resolve(SignUpPresenter.self,arguments: viewContract,delegate)
+        .resolve(SignUpPresenterProtocol.self,arguments: viewContract,delegate)
     }
 }

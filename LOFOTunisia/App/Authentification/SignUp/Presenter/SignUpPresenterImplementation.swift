@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SignUpPresenterImplementation : SignUpPresenter {
+class SignUpPresenterImplementation : SignUpPresenterProtocol {
     
     let viewContract: SignUpViewContract?
     weak var signUpInteractor: SignUpInteractor?
