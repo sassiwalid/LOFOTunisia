@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A98750D524826AAE009B8464 /* RemoteConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98750D424826AAE009B8464 /* RemoteConfigModel.swift */; };
+		A98750D72482716D009B8464 /* RemoteConfigRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98750D62482716D009B8464 /* RemoteConfigRepository.swift */; };
+		A98750DA2482746C009B8464 /* RemoteConfigRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98750D92482746C009B8464 /* RemoteConfigRepositoryImplementation.swift */; };
+		A98750DC24827D70009B8464 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98750DB24827D70009B8464 /* Configuration.swift */; };
 		A9F36AB32471F0A20009DD44 /* RemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F36AA92471F0A10009DD44 /* RemoteConfig.framework */; };
 		A9F36AB82471F0A20009DD44 /* RemoteConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F36AB72471F0A20009DD44 /* RemoteConfigTests.swift */; };
 		A9F36ABA2471F0A20009DD44 /* RemoteConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F36AAC2471F0A10009DD44 /* RemoteConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +27,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A98750D424826AAE009B8464 /* RemoteConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigModel.swift; sourceTree = "<group>"; };
+		A98750D62482716D009B8464 /* RemoteConfigRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigRepository.swift; sourceTree = "<group>"; };
+		A98750D92482746C009B8464 /* RemoteConfigRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigRepositoryImplementation.swift; sourceTree = "<group>"; };
+		A98750DB24827D70009B8464 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		A9F36AA92471F0A10009DD44 /* RemoteConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RemoteConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F36AAC2471F0A10009DD44 /* RemoteConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteConfig.h; sourceTree = "<group>"; };
 		A9F36AAD2471F0A10009DD44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +58,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A98750CD2482686C009B8464 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A98750D12482689D009B8464 /* Data */,
+				A98750CE2482687D009B8464 /* Core */,
+				A98750DB24827D70009B8464 /* Configuration.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A98750CE2482687D009B8464 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A98750D02482688F009B8464 /* Entity */,
+				A98750CF24826887009B8464 /* Data */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A98750CF24826887009B8464 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A98750D82482744A009B8464 /* RemoteConfig */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A98750D02482688F009B8464 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A98750D12482689D009B8464 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A98750D324826A8D009B8464 /* RemoteConfig */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A98750D2248268B1009B8464 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		A98750D324826A8D009B8464 /* RemoteConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A98750D424826AAE009B8464 /* RemoteConfigModel.swift */,
+				A98750D62482716D009B8464 /* RemoteConfigRepository.swift */,
+			);
+			path = RemoteConfig;
+			sourceTree = "<group>";
+		};
+		A98750D82482744A009B8464 /* RemoteConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A98750D92482746C009B8464 /* RemoteConfigRepositoryImplementation.swift */,
+			);
+			path = RemoteConfig;
+			sourceTree = "<group>";
+		};
 		A9F36A9F2471F0A10009DD44 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +145,8 @@
 		A9F36AAB2471F0A10009DD44 /* RemoteConfig */ = {
 			isa = PBXGroup;
 			children = (
+				A98750D2248268B1009B8464 /* Configuration */,
+				A98750CD2482686C009B8464 /* Classes */,
 				A9F36AAC2471F0A10009DD44 /* RemoteConfig.h */,
 				A9F36AAD2471F0A10009DD44 /* Info.plist */,
 			);
@@ -148,6 +224,7 @@
 				TargetAttributes = {
 					A9F36AA82471F0A10009DD44 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					A9F36AB12471F0A20009DD44 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -195,6 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98750D524826AAE009B8464 /* RemoteConfigModel.swift in Sources */,
+				A98750D72482716D009B8464 /* RemoteConfigRepository.swift in Sources */,
+				A98750DC24827D70009B8464 /* Configuration.swift in Sources */,
+				A98750DA2482746C009B8464 /* RemoteConfigRepositoryImplementation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +421,7 @@
 		A9F36ABE2471F0A20009DD44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3X72U4HH78;
@@ -356,6 +438,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Lofo-tunisia.RemoteConfig";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +447,7 @@
 		A9F36ABF2471F0A20009DD44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3X72U4HH78;
@@ -388,6 +472,7 @@
 		A9F36AC12471F0A20009DD44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3X72U4HH78;
 				INFOPLIST_FILE = RemoteConfigTests/Info.plist;
@@ -406,6 +491,7 @@
 		A9F36AC22471F0A20009DD44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3X72U4HH78;
 				INFOPLIST_FILE = RemoteConfigTests/Info.plist;
