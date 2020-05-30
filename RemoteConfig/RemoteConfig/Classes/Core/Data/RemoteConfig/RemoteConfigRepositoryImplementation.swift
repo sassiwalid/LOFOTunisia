@@ -14,14 +14,44 @@ public class RemoteConfigRepositoryImplementation: RemoteConfigRepository {
 
     init(configuration: Configuration) {
         self.configuration = configuration
+        self.configuration.setDefaults(remoteConfigDefaultsDictionary)
     }
-    
+
     // MARK: - RemoteConfigRepository
 
     public func getModel() -> RemoteConfigModel {
         return RemoteConfigModel(enableSignUp: configuration["enable_signup"].bool)
     }
 
+    // MARK: - Private
+
+    private var remoteConfigDefaultsDictionary: [String: NSObject] {
+        guard let data = remoteConfigDefaultsData else {
+            return [:]
+        }
+        do {
+           return try PropertyListSerialization.propertyList(
+                    from: data,
+                    options: PropertyListSerialization.ReadOptions(),
+                    format: nil
+            ) as? [String: NSObject] ?? [:]
+        } catch {
+            return [:]
+        }
+    }
+
+    private var remoteConfigDefaultsData: Data? {
+        guard let url = remoteConfigDefaultsUrl else { return nil }
+        return try? Data(contentsOf: url)
+    }
+
+    private var remoteConfigDefaultsUrl : URL? {
+        return currentBundle.url(forResource: "RemoteConfigDefault", withExtension: "plist")
+    }
+
+    private var currentBundle: Bundle {
+        return Bundle(for: type(of: self))
+    }
 }
 
 private extension ConfigurationValue {
