@@ -8,15 +8,15 @@
 
 import Foundation
 
-public class SignInPresenterProtocolImplementation :SignInPresenterProtocol{
-   
-    
-    let viewContract: SignInViewContract?
+public class LoginPresenterProtocolImplementation: LoginPresenter {
+
+    let viewContract: LoginViewContract?
     weak var signInInteractor: LoginInteractor?
     var request: LoginRequest?
     var delegate: LoginPresenterDelegate?
     var tagger: Tagger?
-    init(viewContract: SignInViewContract,
+
+    init(viewContract: LoginViewContract,
          intercator:LoginInteractor,
          delegate: LoginPresenterDelegate,
          tagger: Tagger) {
@@ -25,6 +25,9 @@ public class SignInPresenterProtocolImplementation :SignInPresenterProtocol{
         self.delegate = delegate
         self.tagger = tagger
     }
+
+    // MARK: - LoginPresenter
+
     /// Check if user exist, if ok pass to the dashboard view
     /// - Parameters:
     ///   - login: user email

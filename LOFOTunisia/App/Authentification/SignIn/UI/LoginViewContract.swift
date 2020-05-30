@@ -8,10 +8,10 @@
 
 import Foundation
 
-protocol SignInViewContract {
+protocol LoginViewContract {
     func showLoading()
     func hideLoading()
     func displayError()
     func displaySuccess()
-    func enableCreateButton(_ status:Bool)
+    func enableCreateButton(_ status: Bool)
 }

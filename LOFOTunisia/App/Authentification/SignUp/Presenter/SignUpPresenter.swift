@@ -8,8 +8,14 @@
 
 import Foundation
 
-protocol SignUpPresenterProtocol{
-    func didTappedCreateUser(email:String, password:String, age:Int, city:String, name:String, subName:String)
+protocol SignUpPresenter {
+
+    func didTappedCreateUser(email:String,
+                             password:String,
+                             age:Int,
+                             city:String,
+                             name:String,
+                             subName:String)
     func didtapBack()
 }
 public protocol SignUpPresenterDelegate: class {

@@ -10,7 +10,6 @@ import Foundation
 
 class LoginInteractorImplementation: LoginInteractor {
 
-    
     private let userDataRepository: UserDataRepository
     init(userDataRepository:UserDataRepository) {
         self.userDataRepository = userDataRepository
@@ -24,5 +23,4 @@ class LoginInteractorImplementation: LoginInteractor {
     func execute(completion: @escaping (FBResponse?) -> Void) {
         userDataRepository.FBLogin(onCompletion: completion)
     }
-    
 }
